@@ -1,0 +1,25 @@
+# /home/pugnace/.config/tmuxinator/pythonDev.yml
+
+name: pythonDev
+root: ~/
+windows:
+  - NeoVim:
+      layout: main-horizontal
+      panes:
+        - nvim
+  - PIP GIT PY BASH:
+      layout: tiled
+      panes:
+        - python
+        - cd ~/Desktop/git/Orange3-Clockwork/; tree
+        - orange
+        - git setup:
+          - cd ~/Desktop/git/Orange3-Clockwork/
+          - tree
+          - cat ~/Desktop/git/PAT.txt
+
+  - Term:
+      layout: even-horizontal
+      panes:
+          - ls
+          - ls
