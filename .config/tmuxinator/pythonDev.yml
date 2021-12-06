@@ -16,7 +16,6 @@ windows:
         - git setup:
           - cd ~/Desktop/git/Orange3-Clockwork/
           - tree
-          - cat ~/Desktop/git/PAT.txt
 
   - Term:
       layout: even-horizontal
