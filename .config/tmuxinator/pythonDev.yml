@@ -11,12 +11,20 @@ windows:
       layout: tiled
       panes:
         - python
-        - cd ~/Desktop/git/Orange3-Clockwork/; tree
-        - orange
+        - cd ~/Git/Orange3-Clockwork/; tree
+        - orange launcher:
+          - conda activate orange3
+          - orange-canvas
         - git setup:
-          - cd ~/Desktop/git/Orange3-Clockwork/
+          - cd ~/Git/Orange3-Clockwork/
           - tree
-
+  - Overview:
+      layout: tiled
+      panes:
+        - htop
+        - bmon
+        - ranger
+        - neofetch
   - Term:
       layout: even-horizontal
       panes:
