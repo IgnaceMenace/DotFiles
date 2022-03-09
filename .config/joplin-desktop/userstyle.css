@@ -1,0 +1,30 @@
+/*You need the JetBRains Mono fonts to make this stylesheet work properly*/
+html, body {
+	background-color: #2e3440;
+	color: #8fbcbb;
+	font-family: "JetBrains Mono", Times, serif;
+	text-align: justify;
+	margin: 5px 5px 5px 5px;
+	counter-reset: section;
+	}
+h1 {
+	color: #bf616a;
+	counter-reset: subsection;
+}
+h2 {
+	color: #d08770;
+}
+h3 {
+	color: #ebcb8b;
+}
+h4 {
+	color: #a3be8c;
+}
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
