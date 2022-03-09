@@ -1,26 +1,27 @@
-/*You need the JetBRains Mono fonts to make this stylesheet work properly*/
-html, body {
-	/*background-color: #2e3440;*/
-	background-color: #1d1f21;
-	color: #8fbcbb;
+/*******************************************************************************************************************************************
+* ██▓███   █    ██   ▄████  ███▄    █  ▄▄▄       ▄████▄  ▓█████   ██████    ▓█████▄  ▄▄▄       ██▀███   ██ ▄█▀     ██████  ██▓▓█████▄ ▓█████ * 
+*▓██░  ██▒ ██  ▓██▒ ██▒ ▀█▒ ██ ▀█   █ ▒████▄    ▒██▀ ▀█  ▓█   ▀ ▒██    ▒    ▒██▀ ██▌▒████▄    ▓██ ▒ ██▒ ██▄█▒    ▒██    ▒ ▓██▒▒██▀ ██▌▓█   ▀ *
+*▓██░ ██▓▒▓██  ▒██░▒██░▄▄▄░▓██  ▀█ ██▒▒██  ▀█▄  ▒▓█    ▄ ▒███   ░ ▓██▄      ░██   █▌▒██  ▀█▄  ▓██ ░▄█ ▒▓███▄░    ░ ▓██▄   ▒██▒░██   █▌▒███   *
+*▒██▄█▓▒ ▒▓▓█  ░██░░▓█  ██▓▓██▒  ▐▌██▒░██▄▄▄▄██ ▒▓▓▄ ▄██▒▒▓█  ▄   ▒   ██▒   ░▓█▄   ▌░██▄▄▄▄██ ▒██▀▀█▄  ▓██ █▄      ▒   ██▒░██░░▓█▄   ▌▒▓█  ▄ *
+*▒██▒ ░  ░▒▒█████▓ ░▒▓███▀▒▒██░   ▓██░ ▓█   ▓██▒▒ ▓███▀ ░░▒████▒▒██████▒▒   ░▒████▓  ▓█   ▓██▒░██▓ ▒██▒▒██▒ █▄   ▒██████▒▒░██░░▒████▓ ░▒████▒*
+*▒▓▒░ ░  ░░▒▓▒ ▒ ▒  ░▒   ▒ ░ ▒░   ▒ ▒  ▒▒   ▓▒█░░ ░▒ ▒  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░    ▒▒▓  ▒  ▒▒   ▓▒█░░ ▒▓ ░▒▓░▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░░▓   ▒▒▓  ▒ ░░ ▒░ ░*
+*░▒ ░     ░░▒░ ░ ░   ░   ░ ░ ░░   ░ ▒░  ▒   ▒▒ ░  ░  ▒    ░ ░  ░░ ░▒  ░ ░    ░ ▒  ▒   ▒   ▒▒ ░  ░▒ ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░ ▒ ░ ░ ▒  ▒  ░ ░  ░*
+*░░        ░░░ ░ ░ ░ ░   ░    ░   ░ ░   ░   ▒   ░           ░   ░  ░  ░      ░ ░  ░   ░   ▒     ░░   ░ ░ ░░ ░    ░  ░  ░   ▒ ░ ░ ░  ░    ░   *
+*            ░           ░          ░       ░  ░░ ░         ░  ░      ░        ░          ░  ░   ░     ░  ░            ░   ░     ░       ░  ░*
+*                                               ░                            ░                                                 ░             *
+*********************************************************************************************************************************************/
+
+/* still need to implement the first page with icons, author name, date, title, a light mode with @media, style array
+change the underlined color, fixe the numbers,set default for images, pages numbers 
+*/
+
+Html,body {
 	font-family: "JetBrains Mono", Times, serif;
 	text-align: justify;
 	margin: 5px 5px 5px 5px;
 	counter-reset: section;
-	}
-h1 {
-	color: #bf616a;
-	counter-reset: subsection;
 }
-h2 {
-	color: #d08770;
-}
-h3 {
-	color: #ebcb8b;
-}
-h4 {
-	color: #a3be8c;
-}
+
 h1::before {
   counter-increment: section;
   content: "Section " counter(section) ". ";
@@ -28,4 +29,52 @@ h1::before {
 h2::before {
   counter-increment: subsection;
   content: counter(section) "." counter(subsection) " ";
+}
+
+@media (prefers-color-scheme: dark) {
+	html, body {
+		/*background-color: #2e3440;*/
+		background-color: #1d1f21;
+		color: #8fbcbb;
+		}
+	a:link {
+		color: #81a1c1;
+	}
+	h1 {
+		color: #bf616a;
+		counter-reset: subsection;
+	}
+	h2 {
+		color: #d08770;
+	}
+	h3 {
+		color: #ebcb8b;
+	}
+	h4 {
+		color: #a3be8c;
+	}
+}
+
+@media screen and (prefers-color-scheme: light) {
+	html, body {
+		/*background-color: #2e3440;*/
+		background-color: #1d1f21;
+		color: #8fbcbb;
+		}
+	a:link {
+		color: #81a1c1;
+	}
+	h1 {
+		color: #bf616a;
+		counter-reset: subsection;
+	}
+	h2 {
+		color: #d08770;
+	}
+	h3 {
+		color: #ebcb8b;
+	}
+	h4 {
+		color: #a3be8c;
+	}
 }
