@@ -1,6 +1,7 @@
 /*You need the JetBRains Mono fonts to make this stylesheet work properly*/
 html, body {
-	background-color: #2e3440;
+	/*background-color: #2e3440;*/
+	background-color: #1d1f21;
 	color: #8fbcbb;
 	font-family: "JetBrains Mono", Times, serif;
 	text-align: justify;
