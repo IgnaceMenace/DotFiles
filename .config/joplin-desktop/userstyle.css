@@ -32,6 +32,7 @@ h4 { counter-reset: h5counter; }
 h5 { counter-reset: h6counter; }
 h6 {}
 /*---------------------------------------------------------------------------*/
+
 /*------- Attribute the current counter value to each titles ----------------*/
 h1:before {
 	counter-increment: h1counter;
@@ -66,6 +67,7 @@ h6:before {
 
 /*------ Lighter color around titles-----------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
+	padding-left: 5px;
 	background-color: #4c566a;
 }
 /*---------------------------------------------------------------------------*/
@@ -110,13 +112,23 @@ h4 {
 /*---------------------------------------------------------------------------*/
 
 /*------ Tables setup -------------------------------------------------------*/
-table, th, td {
-	
+th{
 	font-family: "JetBrains Mono", Times, serif;
-	background-color: #4c566a;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
 }
 /*---------------------------------------------------------------------------*/
+
+/*------ Force Joplin to print the pdf in light mode so it's easier to print afterwards -*/
+@media print{
+	html,body{
+	font-family: "Nimbus Roman", Times, serif;
+	background-color: #ffffff;
+	color: #000000;
+	}
+	h1, h2{
+	background-color: #d8dee9;
+	border-bottom:    unset;
+	}
+	h3, h4, h5, h6{
+	background-color: #ffffff;
+	border-bottom: unset;
+}
