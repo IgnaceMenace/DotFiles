@@ -180,10 +180,10 @@ font:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
   #primary:
-  #  background: '#1d1f21'
+  #  background: '#000000'
   #  foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
@@ -280,6 +280,26 @@ font:
   #  magenta: '#b294bb'
   #  cyan:    '#8abeb7'
   #  white:   '#c5c8c6'
+  normal:
+     black:   '#1d1f21'
+     red:     '#bf616a'
+     green:   '#a3be8c'
+     yellow:  '#ebcb8b'
+     blue:    '#88c0d0'
+     magenta: '#b48ead'
+     cyan:    '#8fbcbb'
+     white:   '#d8dee9'
+
+  bright:
+     black:   '#1d1f21'
+     red:     '#bf616a'
+     green:   '#a3be8c'
+     yellow:  '#ebcb8b'
+     blue:    '#88c0d0'
+     magenta: '#b48ead'
+     cyan:    '#8fbcbb'
+     white:   '#d8dee9'
+ 
 
   # Bright colors
   #bright:
