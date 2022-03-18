@@ -291,7 +291,7 @@ colors:
      white:   '#d8dee9'
 
   bright:
-     black:   '#1d1f21'
+     black:   '#444444'
      red:     '#bf616a'
      green:   '#a3be8c'
      yellow:  '#ebcb8b'
