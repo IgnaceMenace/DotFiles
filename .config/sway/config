@@ -88,6 +88,10 @@ gaps outer 10
     bindsym F2 exec amixer -D pipewire sset Master 5%-
     bindsym F3 exec amixer -D pipewire sset Master 5%+
     
+    # Brightness
+    bindsym F5 exec light -U 5
+    bindsym F6 exec light -A 5
+    
     # Calculator
 	bindsym F12 exec gnome-calculator
 
