@@ -1,5 +1,4 @@
 # Default config for sway
-# By IgnaceMenace
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
@@ -19,7 +18,8 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+#set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu wofi --show run
 
 ### Output configuration
 #
@@ -86,8 +86,8 @@ gaps outer 10
     bindsym Print exec grim
     
     # Audio
-    bindsym F2 exec amixer -D pipewire sset Master 5%-
-    bindsym F3 exec amixer -D pipewire sset Master 5%+
+    bindsym F2 exec amixer -D pipewire sset Master 1%-
+    bindsym F3 exec amixer -D pipewire sset Master 1%+
     
     # Brightness
     bindsym F5 exec light -U 5
@@ -229,12 +229,18 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
 	swaybar_command waybar
+
 #    position top
 
     # When the status_cmmmand prints a new line tm stdout, swaybar updates.
