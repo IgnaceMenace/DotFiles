@@ -30,5 +30,8 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-alias txpy="tmuxinator pythonDev"
+alias txpy="tmuxp load ~/.config/tmuxp/pythonDev.yaml"
 alias txkl="tmux kill-session"
+alias codium="/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/codium --file-forwarding com.vscodium.codium --no-sandbox --unity-launch @@ %F @@"
+export PATH=/home/pugnace/.cargo/bin:$PATH
+EDITOR=vim
