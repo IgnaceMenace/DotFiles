@@ -25,9 +25,9 @@ set $menu j4-dmenu-desktop --dmenu='wofi -dmenu -i'
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/pugnace/Pictures/Wallpapers/Background3.png fill
-#output * bg /home/pugnace/Pictures/Wallpapers/Background5.png fill
-#output * bg /home/pugnace/Pictures/Wallpapers/Background2.png fill
+#output * bg /home/pugnace/Pictures/Wallpapers/Background3.png fill
+output * bg /home/pugnace/Pictures/Wallpapers/adwaitaDark2.jpg fill
+
 client.focused #88c0d0 #88c0d0 #1d1f21 #88c0d0 #88c0d0
 client.focused_inactive #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
 client.unfocused #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
