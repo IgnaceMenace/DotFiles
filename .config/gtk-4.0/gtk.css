@@ -1,18 +1,47 @@
-// https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/_defaults.scss
-// https://www.reddit.com/r/gnome/comments/tp3v7d/theming_in_libadwaita_is_pretty_nice/
+/*
+https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1.1/named-colors.html
+https://www.reddit.com/r/gnome/comments/tp3v7d/theming_in_libadwaita_is_pretty_nice/
+*/
 window{
 border-radius: 0px;
 }
 
-@define-color accent_color #88c0d0;
 @define-color accent_bg_color #88c0d0;
+@define-color accent_fg_color #d8dee9;
+@define-color accent_color #88c0d0;
+
+@define-color destructive_bg_color #bf616a;
+@define-color destructive_fg_color #d8dee9;
+@define-color destructive_color #bf616a;
+
+@define-color success_bg_color #a3be8c;
+@define-color success_fg_color #d8dee9;
+@define-color success_color #a3be8c;
+@define-color warning_bg_color #ebcb8b;
+@define-color warning_fg_color #d8dee9;
+@define-color warning_color #ebcb8b;
+@define-color error_bg_color #bf616a;
+@define-color error_fg_color #d8dee9;
+@define-color error_color #bf616a;
+
 @define-color window_bg_color #1d1f21;
 @define-color window_fg_color #d8dee9;
-@define-color headerbar_bg_color #1d1f21;
-@define-color headerbar_fg_color #d8dee9;
-@define-color popover_bg_color #4c566a;
-@define-color popover_fg_color #d8dee9;
+
 @define-color view_bg_color #111111;
 @define-color view_fg_color #d8dee9;
-@define-color card_bg_color #1d1f21;
+
+@define-color headerbar_bg_color #1d1f21;
+@define-color headerbar_fg_color #d8dee9;
+@define-color headerbar_border_color #1d1f21;
+@define-color headerbar_backdrop_color #1d1f21;
+@define-color headerbar_shade_color #1d1f21;
+
+@define-color card_bg_color #111111;
 @define-color card_fg_color #d8dee9;
+@define-color card_shade_color #1d1f21;
+
+@define-color popover_bg_color #4c566a;
+@define-color popover_fg_color #d8dee9;
+
+@define-color shade_color #111111;
+@define-color scrollbar_outline_color #1d1f21;
