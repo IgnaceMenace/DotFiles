@@ -1,9 +1,16 @@
-# Default config for sway
-#
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-
+# https://man.archlinux.org/man/sway-bar.5.en
+# https://man.archlinux.org/man/sway.5.en
+# This wonfiguration is made by myself and is my first one
+# It still needs to be organized properly
+# It sill needs some improvments
+# - mute and unmute not working
+# - the launcher isn't the best one, I'm looking for another one that can launch Flatpaks
+# - maybe if i can use variable and shell script i can automate the cycle through 
+# the different dual display configurations
+# - I'm planing to build a gtk based menu similar to the GNOME one on the top right corner
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -15,6 +22,9 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term alacritty
+# Foot might be a better option
+#set $term foot
+
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -104,7 +114,8 @@ default_floating_border none
     
     
     # Media keys
-	bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+#	bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+	bindsym F1 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
         
     # Calculator
 	bindsym F12 exec gnome-calculator
@@ -186,8 +197,8 @@ default_floating_border none
 	
 	output HDMI-A-1 res 1920x1080
 	output HDMI-A-1 pos 0 0
-	output eDP-1 disable
-	#output eDP-1 enable
+	#output eDP-1 disable
+	output eDP-1 enable
 
     bindsym $mod+p output eDP-1 enable
     bindsym $mod+Shift+p output eDP-1 disable
@@ -265,16 +276,23 @@ input type:touchpad {
 bar {
 	swaybar_command waybar
 
-#    position top
-
+#	tray_bindcode 272 Activate 
     # When the status_cmmmand prints a new line tm stdout, swaybar updates.
     # The default just shows the current date and time.
-#    status_command while date +'%d-%m-%Y %l:%M:%S %p'; do sleep 1; done
+#	font JetBrains Mono Regular 12
+#	gaps 10
+#	height 20
+#   position top
+#	status_command while date +'%d-%m-%Y | %H:%M:%S | '; do sleep 1; done
+#	#status_command i3blocks -c ~/.config/sway/i3Block.config
 #    colors {
+#		background #bf616a 
 #        statusline #1d1f21
-#        background #bf616a
-#        inactive_workspace #32323200 #32323200 #5c5c5c
+#		focused_workspace #88c0d0 #88c0d0 #1d1f21
+#        inactive_workspace #1d1f21 #1d1f21 #bf616a
+#        active_workspace #88c0d0 #1d1f21 #bf616a
 #    }
+
 }
 
 include /etc/sway/config.d/*
