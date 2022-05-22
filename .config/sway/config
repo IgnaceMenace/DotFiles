@@ -1,8 +1,8 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+# Find it online at https://man.archlinux.org/man/sway.5.en
 # https://man.archlinux.org/man/sway-bar.5.en
-# https://man.archlinux.org/man/sway.5.en
 # This configuration is made by myself and is my first one
 # It still needs to be organized properly
 # It sill needs some improvments
@@ -32,29 +32,19 @@ set $term alacritty
 #set $menu wofi --show run
 set $menu j4-dmenu-desktop --dmenu='wofi -dmenu -i'
 
-### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg /home/pugnace/Pictures/Wallpapers/Background3.png fill
-output * bg /home/pugnace/Pictures/Wallpapers/adwaitaDark2.jpg fill
-
-client.focused #88c0d0 #88c0d0 #1d1f21 #88c0d0 #88c0d0
-client.focused_inactive #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
-client.unfocused #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
-#
-# Example configuration:
-#
-output Virtual-1 resolution 1920x1080 position 1920,0
-
 # Ricing
+#
 #hide_edge_borders smart
 default_border pixel 3
 #default_border none
 gaps inner 10
 gaps outer 10
 default_floating_border none
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+client.focused #88c0d0 #88c0d0 #1d1f21 #88c0d0 #88c0d0
+client.focused_inactive #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
+client.unfocused #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
 
 ### Idle configuration
 #
@@ -69,26 +59,42 @@ default_floating_border none
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
+#
+### Output configuration
+#
+output * bg /home/pugnace/Pictures/Wallpapers/adwaitaDark2.jpg fill
+output Virtual-1 resolution 1920x1080 position 1920,0
+#
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+#
 ### Input configuration
 #
-# Example configuration:
-#
-   input "1:1:AT_Translated_Set_2_keyboard" {
-       xkb_layout be
+input type:touchpad {
+	# Enable tap to click
+    tap enabled
+    # Set the scroll to be natural instead of reverse
+    natural_scroll enabled
+}
+input "1:1:AT_Translated_Set_2_keyboard" {
+	xkb_layout be
    }
-   Input "10874:35407:CASUE_USB_KB" {
+Input "10874:35407:CASUE_USB_KB" {
 	xkb_layout be
    }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
+
+
 ### Key bindings
 #
 # Basics:
 #
-	# Start firefox
+	# Start Firefox
     bindsym $mod+b exec firefox
+    
     # Start a terminal
     bindsym ctrl+alt+t exec $term
     
@@ -104,19 +110,16 @@ default_floating_border none
     # Screenshot
     bindsym Print exec grim
     
-    # Audio
-    bindsym F2 exec amixer -D pipewire sset Master 1%-
-    bindsym F3 exec amixer -D pipewire sset Master 1%+
-    
     # Brightness
     bindsym F5 exec light -U 5
     bindsym F6 exec light -A 5
     
-    
     # Media keys
-#	bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-	bindsym F1 exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-        
+    # Needs to be fixed
+	bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    bindsym F2 exec amixer -D pipewire sset Master 1%-
+    bindsym F3 exec amixer -D pipewire sset Master 1%+
+    
     # Calculator
 	bindsym F12 exec gnome-calculator
 
@@ -132,6 +135,11 @@ default_floating_border none
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaymsg exit
+
+
+
+
+
 #
 # Moving around:
 #
@@ -151,11 +159,13 @@ default_floating_border none
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
     bindsym $mod+Shift+$right move right
+    
     # Ditto, with arrow keys
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+    
 #
 # Workspaces:
 #
@@ -192,17 +202,17 @@ default_floating_border none
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 #
-
 # Multiple monitor
-	
+#	
 	output HDMI-A-1 res 1920x1080
 	output HDMI-A-1 pos 0 0
-	#output eDP-1 disable
+#	output eDP-1 disable
 	output eDP-1 enable
-
+	# Set the shortcut to change between 2 configuration of multiple monitor
     bindsym $mod+p output eDP-1 enable
     bindsym $mod+Shift+p output eDP-1 disable
-	
+
+#
 # Layout stuff:
 #
     # You can "split" the current object of your focus with
@@ -264,35 +274,31 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-input type:touchpad {
-    tap enabled
-    natural_scroll enabled
-}
-
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
+# Find it online at https://man.archlinux.org/man/sway-bar.5.en
 bar {
 	swaybar_command waybar
-
+	# Specify the mouse button to click on the tray icon
 #	tray_bindcode 272 Activate 
     # When the status_cmmmand prints a new line tm stdout, swaybar updates.
     # The default just shows the current date and time.
+#	status_command while date +'%d-%m-%Y | %H:%M:%S | '; do sleep 1; done
+	# You can use i3blocks to add specific blocks on the sway status bar
+#	#status_command i3blocks -c ~/.config/sway/i3Block.config
 #	font JetBrains Mono Regular 12
 #	gaps 10
 #	height 20
 #   position top
-#	status_command while date +'%d-%m-%Y | %H:%M:%S | '; do sleep 1; done
-#	#status_command i3blocks -c ~/.config/sway/i3Block.config
 #    colors {
 #		background #bf616a 
-#        statusline #1d1f21
+#       statusline #1d1f21
 #		focused_workspace #88c0d0 #88c0d0 #1d1f21
-#        inactive_workspace #1d1f21 #1d1f21 #bf616a
-#        active_workspace #88c0d0 #1d1f21 #bf616a
+#       inactive_workspace #1d1f21 #1d1f21 #bf616a
+#       active_workspace #88c0d0 #1d1f21 #bf616a
 #    }
-
 }
 
 include /etc/sway/config.d/*
