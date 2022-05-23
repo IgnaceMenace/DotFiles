@@ -120,7 +120,11 @@ Input "10874:35407:CASUE_USB_KB" {
     bindsym F6 exec light -A 5
     
     # Media keys
-    # Needs to be fixed
+    # With specific keys on laptop keyboard
+	bindsym XF86AudioMute exec amixer -D pipewire sset Master toggle
+    bindsym XF86AudioLowerVolume exec amixer -D pipewire sset Master 1%-
+    bindsym XF86AudioRaiseVolume exec amixer -D pipewire sset Master 1%+
+	# With Function keys on external keyboard
     bindsym F1 exec amixer -D pipewire sset Master toggle
     bindsym F2 exec amixer -D pipewire sset Master 1%-
     bindsym F3 exec amixer -D pipewire sset Master 1%+
@@ -140,10 +144,6 @@ Input "10874:35407:CASUE_USB_KB" {
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaymsg exit
-
-
-
-
 
 #
 # Moving around:
