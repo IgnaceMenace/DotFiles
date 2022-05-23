@@ -98,7 +98,7 @@ window#waybar.hidden {
     background: linear-gradient(180deg, #88c0d0, #bf616a, #88c0d0);
     background-size: 400% 400%;
 
-    animation: AnimationName 6s infinite linear;
+    animation: AnimationName 12s infinite linear;
     color: #1d1f21;
 }
 @keyframes AnimationName {
