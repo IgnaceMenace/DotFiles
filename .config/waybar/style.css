@@ -14,7 +14,7 @@ window#waybar {
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+    opacity: 0;
 }
 
 
@@ -24,32 +24,30 @@ window#waybar.hidden {
     border-radius: 20px;
     border-bottom: 3px solid #d8dee9;
 }
-/* https://github.com/nwg-piotr see in this repo a projetc to make a gtk based shell with sway as a base */
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     background: #88c0d0;
     color: #1d1f21;
     border-bottom: 3px solid #d8dee9;
-
 }
 #workspaces button.focused {
     background: #bf616a;
     border-bottom: 3px solid #bf616a;
 }
-
 #workspaces button.focused:hover {
     background: #88c0d0;
     color: #1d1f21;
     border-bottom: 3px solid #d8dee9;
-
 }
-
 #workspaces button.urgent {
     background-color: #eb4d4b;
 }
+#workspaces {
+	padding: 0 10px;
+}
 
 #mode {
-    background-color: #b48ead;
+    background-color: #ebcb8b;    
+    border-radius: 20px;
     border-bottom: 3px solid #d8dee9;
 }
 
@@ -74,22 +72,10 @@ window#waybar.hidden {
     color: #1d1f21;
     border-bottom: 3px solid #d8dee9;
 }
-#workspaces {
-	padding: 0 10px;
-}
+
 #window,
 #workspaces {
     margin: 0px 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0px;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0px;
 }
 
 #clock {
@@ -107,7 +93,6 @@ window#waybar.hidden {
     /*background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);*/
     color: #1d1f21;	
 }
-
 #battery.charging, #battery.plugged {
     background-color: #88c0d0;
     /*background-image: linear-gradient(45deg, #2BD2FF 0%, #2BD2FF 52%, #2BD2FF 90%);*/
