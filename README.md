@@ -7,8 +7,8 @@ This is a file with my KDE configuration saved with Konsave. This software can b
 
 To see what the kde loks like you can check the screenshot provided in the repository.
 
-## Sway Window Manager
-# Sway
+# Sway Window Manager
+## Sway
 You should prbably adapt the keyboard Input to your own setup
 The configuration require multiple dependencies
 - Wofi
@@ -23,5 +23,5 @@ The configuration require multiple dependencies
   But it has less functionalities
 - JetBrains Mono Fonts
 - Alacritty
-# Waybar
+## Waybar
 - JetBrains mono Fonts
