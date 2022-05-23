@@ -118,7 +118,7 @@ Input "10874:35407:CASUE_USB_KB" {
     # Brightness
     bindsym F5 exec light -U 5
     bindsym F6 exec light -A 5
-    
+
     # Media keys
     # With specific keys on laptop keyboard
 	bindsym XF86AudioMute exec amixer -D pipewire sset Master toggle
@@ -131,6 +131,7 @@ Input "10874:35407:CASUE_USB_KB" {
     
     # Calculator
 	bindsym F12 exec gnome-calculator
+	bindsym XF86Calculator exec gnome-calculator
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
