@@ -3,14 +3,19 @@
 # Read `man 5 sway` for a complete reference.
 # Find it online at https://man.archlinux.org/man/sway.5.en
 # https://man.archlinux.org/man/sway-bar.5.en
+#
 # This configuration is made by myself and is my first one
 # It still needs to be organized properly
 # It sill needs some improvments
-# - mute and unmute not working
+# - Use pulseaudio instead of alsamixer maybe
 # - the launcher isn't the best one, I'm looking for another one that can launch Flatpaks
 # - maybe if i can use variable and shell script i can automate the cycle through 
 # the different dual display configurations
 # - I'm planing to build a gtk based menu similar to the GNOME one on the top right corner
+#
+# To display logs and visualise info
+# libinput debug-events
+#
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -116,7 +121,7 @@ Input "10874:35407:CASUE_USB_KB" {
     
     # Media keys
     # Needs to be fixed
-	bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+    bindsym F1 exec amixer -D pipewire sset Master toggle
     bindsym F2 exec amixer -D pipewire sset Master 1%-
     bindsym F3 exec amixer -D pipewire sset Master 1%+
     
@@ -285,7 +290,7 @@ bar {
 #	tray_bindcode 272 Activate 
     # When the status_cmmmand prints a new line tm stdout, swaybar updates.
     # The default just shows the current date and time.
-#	status_command while date +'%d-%m-%Y | %H:%M:%S | '; do sleep 1; done
+#	status_command while date +'%d-%m-%Y | %H:%M:%S | ' ;  do sleep 1; done
 	# You can use i3blocks to add specific blocks on the sway status bar
 #	#status_command i3blocks -c ~/.config/sway/i3Block.config
 #	font JetBrains Mono Regular 12
