@@ -130,6 +130,7 @@ Input "10874:35407:CASUE_USB_KB" {
     bindsym F1 exec amixer -D pipewire sset Master toggle
     bindsym F2 exec amixer -D pipewire sset Master 1%-
     bindsym F3 exec amixer -D pipewire sset Master 1%+
+    bindsym F4 exec amixer -D pipewire sset Capture toggle
     
     # Calculator
 	bindsym F12 exec gnome-calculator
