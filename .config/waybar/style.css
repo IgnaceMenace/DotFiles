@@ -97,7 +97,6 @@ window#waybar.hidden {
     /*background-color: #88c0d0;*/
     background: linear-gradient(180deg, #88c0d0, #bf616a, #88c0d0);
     background-size: 400% 400%;
-
     animation: AnimationName 12s infinite linear;
     color: #1d1f21;
 }
@@ -292,7 +291,13 @@ label:focus {
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
 }
-
+#custom-scratchpad-indicator{
+    font-size: 20px;
+    padding: 0 10px;
+    color: #1d1f21;
+    background: #88c0d0;
+    border-bottom: 3px solid #d8dee9;
+}
 #custom-GnomeLikeMenu {
 	font-size: 20px;
 	background: #ebcb8b;
