@@ -7,6 +7,8 @@
 # This configuration is made by myself and is my first one
 # It still needs to be organized properly
 # It sill needs some improvments
+# - Mode for changing gaps
+# - Mode for changing red light
 # - Use pulseaudio instead of alsamixer maybe
 # - the launcher isn't the best one, I'm looking for another one that can launch Flatpaks
 # - maybe if i can use variable and shell script i can automate the cycle through 
@@ -63,7 +65,7 @@ client.unfocused #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-
+bindsym $mod+Shift+z exec python ~/.config/sway/wofiPowerMenu.py
 #
 ### Output configuration
 #
@@ -279,7 +281,26 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-
+#
+#
+# Gap changing
+#
+#
+mode "gapSet" {
+	bindsym Right gaps inner all plus 2
+	bindsym Left gaps inner all minus 2
+	bindsym $right gaps inner all plus 2
+	bindsym $left gaps inner all minus 2
+	
+	bindsym Up gaps outer all plus 2
+	bindsym Down gaps outer all minus 2
+	bindsym $up gaps outer all plus 2
+	bindsym $down gaps outer all minus 2
+	
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+bindsym $mod+Shift+g mode "gapSet"
 #
 # Status Bar:
 #
