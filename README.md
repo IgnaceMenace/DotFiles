@@ -5,7 +5,7 @@ Take whatever you want, it's free.
 ## .knsv
 This is a file with my KDE configuration saved with Konsave. This software can be installed via pip and will let you store your own configuration or apply any KNSV file you have.
 
-To see what the kde loks like you can check the screenshot provided in the repository.
+To see what the kde lo0ks like you can check the screenshot provided in the repository.
 
 # Sway Window Manager
 ## Sway
