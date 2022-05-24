@@ -22,7 +22,7 @@ def powerMenu():
   )
 
   options = "\n".join(keys)
-  choice = os.popen("echo -e '" + options + "' | wofi -d -i -p 'Power Menu' -W 200 -H 200 -k /dev/null").readline().strip()
+  choice = os.popen("echo -e '" + options + "' | wofi -d -i -p 'Power Menu' -W 250 -H 200 -k /dev/null").readline().strip()
   if choice in keys:
     os.popen(actions[keys.index(choice)])
 
