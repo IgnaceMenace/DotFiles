@@ -27,7 +27,8 @@ The configuration require multiple dependencies
   - Might be replaced by Foot terminal
 ## Waybar
 - JetBrains mono Fonts
-
+# Color chart
+The color chart html file contain all the color I use
 # Road map
 - Scripting the installation for Fedora and Arch
 - Make the zsh theme works even in Podman container
