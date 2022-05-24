@@ -8,7 +8,9 @@
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
 	//,"custom/GnomeLikeMenu"],
     //"modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "tray"],
+    "modules-right": ["pulseaudio", "network",
+    //"cpu", "memory", "temperature", "keyboard-state", 
+    "custom/scratchpad-indicator", "backlight", "battery", "clock", "tray"],
     // Modules configuration
      "sway/workspaces": {
          "disable-scroll": false,
@@ -130,9 +132,9 @@
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": "☠  {format_source}",
         "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-source-muted": "☠ ",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -143,31 +145,17 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    },
-    
+    },    
     "custom/scratchpad-indicator": {
-    "interval": 3,
-    "return-type": "json",
-    "exec": "swaymsg -t get_tree | jq --unbuffered --compact-output '( select(.name == \"root\") | .nodes[] | select(.name == \"__i3\") | .nodes[] | select(.name == \"__i3_scratch\") | .focus) as $scratch_ids | [..  | (.nodes? + .floating_nodes?) // empty | .[] | select(.id |IN($scratch_ids[]))] as $scratch_nodes | { text: \"\\($scratch_nodes | length)\", tooltip: $scratch_nodes | map(\"\\(.app_id // .window_properties.class) (\\(.id)): \\(.name)\") | join(\"\\n\") }'",
-    "format": "{} ScrPd",
-    "on-click": "exec swaymsg 'scratchpad show'",
-    "on-click-right": "exec swaymsg 'move scratchpad'"
+		"interval": 1 ,
+		"return-type": "json",
+		"exec": "swaymsg -t get_tree | jq --unbuffered --compact-output '( select(.name == \"root\") | .nodes[] | select(.name == \"__i3\") | .nodes[] | select(.name == \"__i3_scratch\") | .focus) as $scratch_ids | [..  | (.nodes? + .floating_nodes?) // empty | .[] | select(.id |IN($scratch_ids[]))] as $scratch_nodes | { text: \"\\($scratch_nodes | length)\", tooltip: $scratch_nodes | map(\"\\(.app_id // .window_properties.class) (\\(.id)): \\(.name)\") | join(\"\\n\") }'",
+		"format": "{} ScrPd",
+		"on-click": "exec swaymsg 'scratchpad show'",
+		"on-click-right": "exec swaymsg 'move scratchpad'"
     },
-    
     "custom/GnomeLikeMenu": {
-    	"format": "  ☠  ",
-    	"on-click": "wofi --show run"
+			"format": "  ☠  ",
+			"on-click": "wofi --show run"
     }
 }
