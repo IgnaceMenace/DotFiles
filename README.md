@@ -21,7 +21,9 @@ The configuration require multiple dependencies
 - Waybar
   - Can be replaced by SwayBar which is installed with Sway.
   But it has less functionalities
-- JetBrains Mono Fonts
+- JetBrains Mono Fonts 
+  - [Download](https://www.jetbrains.com/lp/mono/)
+  - You can also install the patched one from [here](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono)   
 - Alacritty
 ## Waybar
 - JetBrains mono Fonts
