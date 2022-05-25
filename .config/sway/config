@@ -18,6 +18,10 @@
 # To display logs and visualise info
 # libinput debug-events
 #
+# Autorization management from Gnome (you can comment it with no problem)
+#
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
