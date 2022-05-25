@@ -8,9 +8,9 @@ If tmuxinator doesn't work, you should replace it with TmuxP
 You should probably adapt the keyboard Input to your own setup
 The configuration require multiple dependencies
 - Wofi
-  - Can be replaced by Krunner
+  - Can be replaced by Pop Luancher + Onagre
 - J4-dmenu
-  - Can also be replaced by Krunner 
+  - Can also be replaced by Pop Luancher + Onagre
 - Nautilus
 - Alsamixer
 - Pulseaudio
