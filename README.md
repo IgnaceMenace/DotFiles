@@ -1,6 +1,9 @@
 # Dotfiles
 Just a repository with all my linux dotfiles to help me reconfigure each time I reinstall a linux distro.
 Take whatever you want, it's free.
+# Neovim
+I want to change the configuration to write it in Lua and use the built in lsp client.
+I want to configure it for python, markdown and maybe rust if i start learning it. 
 # Tmux
 If tmuxinator doesn't work, you should replace it with TmuxP
 # Sway Window Manager
