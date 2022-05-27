@@ -5,7 +5,7 @@ Take whatever you want, it's free.
 I want to change the configuration to write it in Lua and use the built in lsp client.
 I want to configure it for python, markdown and maybe rust if i start learning it. 
 # Tmux
-If tmuxinator doesn't work, you should replace it with TmuxP
+If tmuxinator doesn't work, you should replace it with TmuxP but the configuration is very personal.
 # Sway Window Manager
 ## Sway
 You should probably adapt the keyboard Input to your own setup
