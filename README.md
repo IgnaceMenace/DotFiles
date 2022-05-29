@@ -11,6 +11,8 @@ To let your flatpaks access the gtk theme you should run this command
 # Tmux
 If tmuxinator doesn't work, you should replace it with TmuxP but the configuration is very personal.
 # Sway Window Manager
+![20220529_23h31m53s_grim](https://user-images.githubusercontent.com/74070019/170892156-a7353cb4-5c38-4fc7-8441-ec6b31e012c3.png)
+
 ## Sway
 You should probably adapt the keyboard Input to your own setup
 The configuration require multiple dependencies
