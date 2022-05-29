@@ -43,4 +43,3 @@ The color chart html file contain all the color I use
 - Make the zsh theme works even in Podman container
 - Reduce the number of dependencies
 - Wofi isn't actively developed anymore so might need to find an alternative
-- Scratchpad module for Waybar
