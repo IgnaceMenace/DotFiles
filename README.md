@@ -4,6 +4,10 @@ Take whatever you want, it's free.
 # Neovim
 I want to change the configuration to write it in Lua and use the built in lsp client.
 I want to configure it for python, markdown and maybe rust if i start learning it. 
+Maybe I will just switch to LuaVim or Lvim or just inspire myself.
+# GTK theme
+To let your flatpaks access the gtk theme you should run this command
+`flatpak override --filesystem=xdg-config/gtk-4.0`
 # Tmux
 If tmuxinator doesn't work, you should replace it with TmuxP but the configuration is very personal.
 # Sway Window Manager
