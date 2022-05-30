@@ -30,7 +30,7 @@ The configuration require multiple dependencies
 - Swaylock
 - Python + os package
 - JetBrains Mono Nerd Fonts 
-  - Find them [here](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/JetBrainsMono/font-info.md)
+  - Find them [here](https://www.nerdfonts.com/font-downloads)
 - Alacritty
   - Might be replaced by Foot terminal
 ## Waybar
