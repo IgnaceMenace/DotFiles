@@ -29,9 +29,8 @@ The configuration require multiple dependencies
   But it has less functionalities
 - Swaylock
 - Python + os package
-- JetBrains Mono Fonts 
-  - [Download](https://www.jetbrains.com/lp/mono/)
-  - You can also install the patched one from [here](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono)   
+- JetBrains Mono Nerd Fonts 
+  - Find them [here](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/JetBrainsMono/font-info.md)
 - Alacritty
   - Might be replaced by Foot terminal
 ## Waybar
