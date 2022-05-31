@@ -40,5 +40,6 @@ The color chart html file contain all the color I use
 # Road map
 - Scripting the installation for Fedora and Arch
 - Make the zsh theme works even in Podman container
-- Reduce the number of dependencies
+- Reduce the number of dependencies (xofi and j4 dmenu)
+- fix polkit issue
 - Wofi isn't actively developed anymore so might need to find an alternative
