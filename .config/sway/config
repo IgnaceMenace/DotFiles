@@ -124,6 +124,8 @@ Input "10874:35407:CASUE_USB_KB" {
     # Brightness
     bindsym F5 exec light -U 5
     bindsym F6 exec light -A 5
+    bindsym XF86MonBrightnessDown exec light -U 5
+    bindsym XF86MonBrightnessUp exec light -A 5
 
     # Media keys
     # With specific keys on laptop keyboard
