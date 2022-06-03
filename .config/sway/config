@@ -120,6 +120,7 @@ Input "10874:35407:CASUE_USB_KB" {
     
     # Screenshot
     bindsym Print exec grim
+    bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy
     
     # Brightness
     bindsym F5 exec light -U 5
