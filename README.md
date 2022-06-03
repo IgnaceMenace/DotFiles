@@ -24,6 +24,7 @@ The configuration require multiple dependencies
 - Alsamixer
 - Pulseaudio
 - Grim
+- Wl-clipboard (to copy the output of grim)
 - Waybar
   - Can be replaced by SwayBar which is installed with Sway.
   But it has less functionalities
