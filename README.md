@@ -23,7 +23,9 @@ The configuration require multiple dependencies
 - Nautilus
 - Alsamixer
 - Pulseaudio
+  - Pavucontrol (for waybar but not mandatory)
 - Grim
+- Light
 - Wl-clipboard (to copy the output of grim)
 - Waybar
   - Can be replaced by SwayBar which is installed with Sway.
