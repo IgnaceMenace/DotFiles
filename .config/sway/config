@@ -108,6 +108,7 @@ Input "10874:35407:CASUE_USB_KB" {
     
     # Start a terminal
     bindsym ctrl+alt+t exec $term
+    bindsym $mod+return exec $term
     
     # Start Nautilus
     bindsym $mod+f exec nautilus
