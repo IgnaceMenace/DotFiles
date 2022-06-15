@@ -15,8 +15,6 @@ If tmuxinator doesn't work, you should replace it with TmuxP but the configurati
 
 ## Sway
 
-**UPDATE add swaymsg exec <application> for executing command pls**
-
 You should probably adapt the keyboard Input to your own setup
 The configuration require multiple dependencies
 - Wofi
@@ -46,14 +44,13 @@ The color chart html file contain all the color I use
 # Road map
 - Foot term config
 - Python script for specific tiling in sway inspired by the one by nwg_piotr
-- wifi menu in wofi
+- Wifi menu in wofi
 - Rofi instead of Wofi ?
 - Add swaymsg exec <application> to launch the app on the workspace they were launched on
 - Scripting the installation for Fedora and Arch
-- A nixOS config
-- An Ansible script
+- Red light
 - A NixOS config file
 - Make the zsh theme works even in Podman container
-- Reduce the number of dependencies (xofi and j4 dmenu)
+- Reduce the number of dependencies (wofi and j4 dmenu)
 - fix polkit issue
 - Wofi isn't actively developed anymore so might need to find an alternative
