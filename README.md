@@ -44,6 +44,10 @@ The configuration require multiple dependencies
 # Color chart
 The color chart html file contain all the color I use
 # Road map
+- Foot term config
+- wifi menu in wofi
+- Rofi instead of Wofi ?
+- Add swaymsg exec <application> to launch the app on the workspace they were launched on
 - Scripting the installation for Fedora and Arch
 - A nixOS config
 - An Ansible script
