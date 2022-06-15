@@ -45,6 +45,7 @@ The configuration require multiple dependencies
 The color chart html file contain all the color I use
 # Road map
 - Foot term config
+- Python script for specific tiling in sway inspired by the one by nwg_piotr
 - wifi menu in wofi
 - Rofi instead of Wofi ?
 - Add swaymsg exec <application> to launch the app on the workspace they were launched on
