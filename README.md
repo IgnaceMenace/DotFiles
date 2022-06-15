@@ -14,6 +14,9 @@ If tmuxinator doesn't work, you should replace it with TmuxP but the configurati
 ![20220529_23h33m54s_grim](https://user-images.githubusercontent.com/74070019/170892201-65f62493-ed11-4c46-a08b-77e637be05cb.png)
 
 ## Sway
+
+**UPDATE add swaymsg exec <application> for executing command pls**
+
 You should probably adapt the keyboard Input to your own setup
 The configuration require multiple dependencies
 - Wofi
