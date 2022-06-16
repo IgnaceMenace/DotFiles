@@ -11,4 +11,4 @@ sway
 waybar
 wofi
 pavucontrol
-
+wl-clipboard
