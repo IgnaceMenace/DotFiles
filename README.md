@@ -12,6 +12,11 @@ To let your flatpaks access the gtk theme you should run this command
 If tmuxinator doesn't work, you should replace it with TmuxP but the configuration is very personal.
 # ZSH
 Make it default with `sudo chsh -s /bin/zsh $USER`
+Install powerlevel10K theme with 
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+```
 # Joplin
 In `Tools/Options/General`
 - `Path` write `/bin/flatpak-spawn`
