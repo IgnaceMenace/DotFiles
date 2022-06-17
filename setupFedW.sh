@@ -45,6 +45,6 @@ flatpak override --filesystem=xdg-config/gtk-4.0
 pip install tmuxp
 
 # Move the configuration files
-mv Pictures\Wallpapers 
+mv Pictures/Wallpapers 
 cd ~
-mv DotFiles\* ~
+mv DotFiles/* ~
