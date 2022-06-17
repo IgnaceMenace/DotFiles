@@ -1,6 +1,16 @@
 # Dotfiles
 Just a repository with all my linux dotfiles to help me reconfigure each time I reinstall a linux distro.
 Take whatever you want, it's free.
+# Installation
+- Clone the repository
+```git clone https://github.com/IgnaceMenace/DotFiles```
+- Navigate to the cloned repository
+```cd DotFiles```
+- Give the installation script permission to be executed
+```sudo chmod +x setupFedW.sh```
+- Execute the script
+```sudo bash setupFedW.sh```
+
 # Neovim
 I want to change the configuration to write it in Lua and use the built in lsp client.
 I want to configure it for python, markdown and maybe rust if i start learning it. 
