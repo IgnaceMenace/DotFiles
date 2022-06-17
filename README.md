@@ -38,6 +38,12 @@ In `Tools/Options/General`
 - `Arguments` write `--host /usr/bin/foot vim`
 # Sway Window Manager
 ![20220529_23h33m54s_grim](https://user-images.githubusercontent.com/74070019/170892201-65f62493-ed11-4c46-a08b-77e637be05cb.png)
+# Foot
+To make it work properly when using it for remote access, 
+you should install foot-terminfo on the host machine/container
+```
+sudo dnf install foot-terminfo
+```
 
 ## Sway
 
