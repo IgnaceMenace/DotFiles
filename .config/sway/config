@@ -18,9 +18,9 @@
 # To display logs and visualise info
 # libinput debug-events
 #
-# Autorization management from Gnome (you can comment it with no problem)
+# Autorization management from lxde (because Gnome-polkit doesn't work outside)
 #
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec lxpolkit
 #
 ### Variables
 #
@@ -32,9 +32,10 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+#set $term alacritty
 # Foot might be a better option
-#set $term foot
+exec foot --server
+set $term footclient
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
