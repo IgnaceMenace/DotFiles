@@ -44,6 +44,11 @@ flatpak override --filesystem=xdg-config/gtk-4.0
 # Install tmuxp
 pip install tmuxp
 
+# Install JetBrains patched fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+unzip JetBrainsMono.zip -d JetBrainsMono/
+mv JetBrainsMono /usr/share/fonts/JetBrainsMono/
+
 # Move the configuration files
 mv Pictures/Wallpapers ~/Pictures/Wallpapers
 cd ~
