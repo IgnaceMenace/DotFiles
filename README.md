@@ -37,6 +37,10 @@ The configuration require multiple dependencies
   - Find them [here](https://www.nerdfonts.com/font-downloads)
 - Alacritty
   - Might be replaced by Foot terminal
+
+The sway config can be run without Waybar if you comment the code that call it
+and uncomment the code for swaybar which is the built in bar
+
 ## Waybar
 - JetBrains mono Fonts
 # Color chart
