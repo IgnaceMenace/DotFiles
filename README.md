@@ -50,7 +50,6 @@ The color chart html file contain all the color I use
 - Python script for specific tiling in sway inspired by the one by nwg_piotr
 - Wifi menu in wofi
 - Rofi instead of Wofi ?
-- Add swaymsg exec <application> to launch the app on the workspace they were launched on
 - Scripting the installation for Fedora and Arch
 - Red light
 - A NixOS config file
