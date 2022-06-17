@@ -50,9 +50,9 @@ unzip JetBrainsMono.zip -d JetBrainsMono/
 sudo mv JetBrainsMono /usr/share/fonts/JetBrainsMono
 
 # Move the configuration files
-mv Pictures/Wallpapers ~/Pictures
+rsync -a Pictures/Wallpapers ~/Pictures
 rm -rf Pictures/Wallpapers
 rm -rf .git
 cd ..
-mv DotFiles/* ~
+rsync -a DotFiles/* ~
 echo reboot to apply all changes
