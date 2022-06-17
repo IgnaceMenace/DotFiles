@@ -51,6 +51,6 @@ sudo mv JetBrainsMono /usr/share/fonts/JetBrainsMono
 
 # Move the configuration files
 mv Pictures/Wallpapers ~/Pictures/Wallpapers
-cd ~
+cd ..
 mv DotFiles/* ~
 echo reboot to apply all changes
