@@ -58,5 +58,5 @@ rm colorChart.html
 rm README.md
 rm setupFedW.sh
 cd ..
-rsync -a DotFiles/* ~
+rsync -a DotFiles/ ~
 echo reboot to apply all changes
