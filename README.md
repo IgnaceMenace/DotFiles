@@ -4,14 +4,15 @@ Take whatever you want, it's free.
 # Installation
 ## Fedora Workstation
 - Clone the repository
-```git clone https://github.com/IgnaceMenace/DotFiles```
 - Navigate to the cloned repository
-```cd DotFiles```
 - Give the installation script permission to be executed
-```sudo chmod +x setupFedW.sh```
 - Execute the script
-```sudo bash setupFedW.sh```
-
+```
+git clone https://github.com/IgnaceMenace/DotFiles
+cd DotFiles
+sudo chmod +x setupFedW.sh
+sudo bash setupFedW.sh
+```
 # Neovim
 I want to change the configuration to write it in Lua and use the built in lsp client.
 I want to configure it for python, markdown and maybe rust if i start learning it. 
