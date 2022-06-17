@@ -50,6 +50,7 @@ unzip JetBrainsMono.zip -d JetBrainsMono/
 mv JetBrainsMono /usr/share/fonts/JetBrainsMono
 
 # Move the configuration files
-mv Pictures/Wallpapers /home/$USER/Pictures/Wallpapers
-cd /home/$USER/
-mv DotFiles/* /home/$USER/
+mv Pictures/Wallpapers ~/Pictures/Wallpapers
+cd ~
+mv DotFiles/* 
+echo reboot to apply all changes
