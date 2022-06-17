@@ -1,3 +1,4 @@
+# Install dependencies and usefull light pckages
 sudo dnf install \
 zsh \
 neovim \
@@ -18,7 +19,9 @@ mc \
 toolbox \
 pip \
 conda \
-#chsh
+htop \
+util-linux-user \
+-y 
 
 # Enable rpm Fusion (free and non-free)
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -40,3 +43,6 @@ flatpak override --filesystem=xdg-config/gtk-4.0
 
 # Install tmuxp
 pip install tmuxp
+
+# Move the configuration files
+mv .config\ ~\home\
