@@ -2,6 +2,7 @@
 Just a repository with all my linux dotfiles to help me reconfigure each time I reinstall a linux distro.
 Take whatever you want, it's free.
 # Installation
+## Fedora Workstation
 - Clone the repository
 ```git clone https://github.com/IgnaceMenace/DotFiles```
 - Navigate to the cloned repository
