@@ -58,3 +58,4 @@ The color chart html file contain all the color I use
 - Reduce the number of dependencies (wofi and j4 dmenu)
 - fix polkit issue
 - Wofi isn't actively developed anymore so might need to find an alternative
+- Midnight Commander
