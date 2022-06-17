@@ -48,10 +48,10 @@ The color chart html file contain all the color I use
 # Road map
 - Foot term config
 - Python script for specific tiling in sway inspired by the one by nwg_piotr
-- Wifi menu in wofi
+- Wifi menu in wofi and maybe screen management menu and tiling layout menu
 - Rofi instead of Wofi ?
 - Scripting the installation for Fedora and Arch
-- Red light
+- Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
 - A NixOS config file
 - Make the zsh theme works even in Podman container
 - Reduce the number of dependencies (wofi and j4 dmenu)
