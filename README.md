@@ -35,6 +35,7 @@ The configuration require multiple dependencies
 - Python + os package
 - JetBrains Mono Nerd Fonts 
   - Find them [here](https://www.nerdfonts.com/font-downloads)
+  - If you want to change glyphs get them [here](https://fontawesome.com/v5/search?s=solid%2Cbrands)
 - Alacritty
   - Might be replaced by Foot terminal
 
