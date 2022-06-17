@@ -53,6 +53,9 @@ sudo mv JetBrainsMono /usr/share/fonts/JetBrainsMono
 rsync -a Pictures/Wallpapers ~/Pictures
 rm -rf Pictures/Wallpapers
 rm -rf .git
+rm JetBrainsMono.zip
+rm colorChart.html
+rm README.md
 cd ..
 rsync -a DotFiles/* ~
 echo reboot to apply all changes
