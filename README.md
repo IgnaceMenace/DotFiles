@@ -11,7 +11,7 @@ Take whatever you want, it's free.
 git clone https://github.com/IgnaceMenace/DotFiles
 cd DotFiles
 sudo chmod +x setupFedW.sh
-sudo bash setupFedW.sh
+bash setupFedW.sh
 ```
 # Neovim
 I want to change the configuration to write it in Lua and use the built in lsp client.
