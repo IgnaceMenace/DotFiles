@@ -36,7 +36,7 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 sudo chsh -s /bin/zsh $USER
 
 # Enable flathub repo
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Give flatpaks access to GTK theme
 flatpak override --filesystem=xdg-config/gtk-4.0
