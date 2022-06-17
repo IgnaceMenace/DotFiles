@@ -22,6 +22,9 @@ To let your flatpaks access the gtk theme you should run this command
 `flatpak override --filesystem=xdg-config/gtk-4.0`
 # Tmux
 If tmuxinator doesn't work, you should replace it with TmuxP but the configuration is very personal.
+# Midnight Commander
+It's pretty powerfull but knowing all of its feature is a loss of time so I'm haven't realy configured it.
+Learn more [here](https://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
 # ZSH
 Make it default with `sudo chsh -s /bin/zsh $USER`
 Install powerlevel10K theme with 
