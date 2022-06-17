@@ -10,6 +10,8 @@ To let your flatpaks access the gtk theme you should run this command
 `flatpak override --filesystem=xdg-config/gtk-4.0`
 # Tmux
 If tmuxinator doesn't work, you should replace it with TmuxP but the configuration is very personal.
+# ZSH
+Make it default with `sudo chsh -s /bin/zsh $USER`
 # Joplin
 In `Tools/Options/General`
 - `Path` write `/bin/flatpak-spawn`
