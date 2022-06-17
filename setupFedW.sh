@@ -39,7 +39,7 @@ sudo chsh -s /bin/zsh $USER
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Give flatpaks access to GTK theme
-flatpak override --filesystem=xdg-config/gtk-4.0
+sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
 # Install tmuxp
 pip install tmuxp
