@@ -11,7 +11,7 @@ To let your flatpaks access the gtk theme you should run this command
 # Tmux
 If tmuxinator doesn't work, you should replace it with TmuxP but the configuration is very personal.
 # Joplin
-In `tools\option\General`
+In `Tools/Options/General`
 - `Path` write `/bin/flatpak-spawn`
 - `Arguments` write `--host /usr/bin/foot vim`
 # Sway Window Manager
