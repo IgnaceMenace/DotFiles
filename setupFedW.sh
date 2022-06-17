@@ -44,6 +44,9 @@ flatpak override --filesystem=xdg-config/gtk-4.0
 # Install tmuxp
 pip install tmuxp
 
+# Install Pop OS Shell extension for Gnome
+sudo dnf install gnome-shell-extension-pop-shell xprop
+
 # Install JetBrains patched fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
 unzip JetBrainsMono.zip -d JetBrainsMono/
