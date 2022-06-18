@@ -85,6 +85,7 @@ The color chart html file contain all the color I use
 - Rofi instead of Wofi because wofi is unmiantained
   - Unfortnuately Rofi isn't Wayland native
   - Maybe watch Onagre/PopLauncher  
+  - ulauncher works fine but it's a bit slow
 - Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
   - Still need to see if this is a decent option since it need to be compiled etc it doesnt have a lot of users
 - A NixOS config file
