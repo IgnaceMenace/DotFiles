@@ -44,15 +44,14 @@ you should install foot-terminfo on the host machine/container
 ```
 sudo dnf install foot-terminfo
 ```
-
+# Fuzzel
+Developed by the same dev as Foot, it's the replacent for wofi.
+No configuration file, you just give it arguments when calling it
 ## Sway
 
 You should probably adapt the keyboard Input to your own setup
 The configuration require multiple dependencies
-- Wofi
-  - Can be replaced by Pop Luancher + Onagre
-- J4-dmenu
-  - Can also be replaced by Pop Luancher + Onagre
+- Fuzzel
 - Nautilus
 - Alsamixer
 - Pulseaudio
@@ -81,14 +80,9 @@ The color chart html file contain all the color I use
 # Road map
 - Perfect the Qtile configuration
 - Python script for specific tiling in sway inspired by the one by nwg_piotr
-- Tiling layout menu with wofi if I manage to build a python script for tiling
-- Rofi instead of Wofi because wofi is unmiantained
-  - Unfortnuately Rofi isn't Wayland native
-  - Maybe watch Onagre/PopLauncher  but it's in early stage
-  - ulauncher works fine but it's a bit slow
-  - fuzzel is supposedly the replacement for wofi
+- Tiling layout menu with fuzzel if I manage to build a python script for tiling
 - Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
   - Still need to see if this is a decent option since it need to be compiled etc it doesnt have a lot of users
 - A NixOS config file
-- Reduce the number of dependencies
-  - j4-dmenu-desktop is needed to launch flatpak but it's another launcher
+- Reduce the number of dependencies 
+  - And also the software that as small user base and arens't the most updated
