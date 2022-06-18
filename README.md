@@ -72,6 +72,8 @@ The configuration require multiple dependencies
 
 The sway config can be run without Waybar if you comment the code that call it
 and uncomment the code for swaybar which is the built in bar
+There is a python script to automatically alternate the tiling layout in the config file.
+It's just a fork
 
 ## Waybar
 - JetBrains mono Fonts
@@ -79,10 +81,10 @@ and uncomment the code for swaybar which is the built in bar
 The color chart html file contain all the color I use
 # Road map
 - Perfect the Qtile configuration
-- Python script for specific tiling in sway inspired by the one by nwg_piotr
-- Tiling layout menu with fuzzel if I manage to build a python script for tiling
 - Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
   - Still need to see if this is a decent option since it need to be compiled etc it doesnt have a lot of users
 - A NixOS config file
 - Reduce the number of dependencies 
-  - And also the software that as small user base and arens't the most updated
+  - To prevent the usage of unmaintained code
+  - To keep a minimal installation
+  - Every lighter options with similar capabilities will be prefered 
