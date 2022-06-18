@@ -80,7 +80,7 @@ It's just a fork
 # Color chart
 The color chart html file contain all the color I use
 # Road map
-**Keep in mind that it's better to reduce the number of dependencies 
+**Keep in mind that it's better to reduce the number of dependencies**
   - To prevent the usage of unmaintained code
   - To keep a minimal installation
   - Every lighter options with similar capabilities will be prefered 
