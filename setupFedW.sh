@@ -1,17 +1,14 @@
 # Install dependencies and usefull light pckages
 sudo dnf install \
-zsh \
-neovim \
-ranger \
-asciiquarium \
-cmatrix \
-vim \
-neofetch \
-j4-dmenu-desktop \
 sway \
 waybar \
-wofi \
+zsh \
+fuzzel \
+neovim \
+ranger \
+vim \
 pavucontrol \
+util-linux-user \
 wl-clipboard \
 NetworkManager-tui \
 light \
@@ -20,7 +17,9 @@ toolbox \
 pip \
 conda \
 htop \
-util-linux-user \
+neofetch \
+asciiquarium \
+cmatrix \
 #ulauncher \
 -y 
 
