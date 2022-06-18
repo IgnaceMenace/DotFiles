@@ -40,10 +40,7 @@ set $term footclient
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-#set $menu dmenu_path | dmenu | xargs swaymsg exec --
-#set $menu wofi --show run
-set $menu j4-dmenu-desktop --dmenu='wofi -dmenu -i'
-
+set $menu fuzzel -f JetBrainsMono -C ebcb8bff -b 1d1f21ff -T footclient -B 3 -m a3be8cff -t 88c0d0ff -S d8dee9ff -s bf616aff --show-actions
 #
 # Ricing
 #
@@ -70,7 +67,7 @@ client.unfocused #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-bindsym $mod+Shift+z exec python ~/.config/sway/wofiPowerMenu.py
+bindsym $mod+Shift+z exec python ~/.config/sway/fuzzelPowerMenu.py
 #
 ### Output configuration
 #
@@ -119,7 +116,8 @@ Input "10874:35407:CASUE_USB_KB" {
 
     # Start your launcher
     bindsym $mod+d exec $menu
-    
+    bindsym $mod+shift+d exec ulauncher
+
     # Screenshot
     bindsym Print exec grim
     bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy
