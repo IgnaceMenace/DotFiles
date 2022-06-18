@@ -84,8 +84,9 @@ The color chart html file contain all the color I use
 - Tiling layout menu with wofi if I manage to build a python script for tiling
 - Rofi instead of Wofi because wofi is unmiantained
   - Unfortnuately Rofi isn't Wayland native
-  - Maybe watch Onagre/PopLauncher  
+  - Maybe watch Onagre/PopLauncher  but it's in early stage
   - ulauncher works fine but it's a bit slow
+  - fuzzel is supposedly the replacement for wofi
 - Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
   - Still need to see if this is a decent option since it need to be compiled etc it doesnt have a lot of users
 - A NixOS config file
