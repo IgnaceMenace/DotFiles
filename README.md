@@ -23,7 +23,7 @@ To let your flatpaks access the gtk theme you should run this command
 # Tmux
 If tmuxinator doesn't work, you should replace it with TmuxP but the configuration is very personal.
 # Midnight Commander
-It's pretty powerfull but knowing all of its feature is a loss of time so I'm haven't realy configured it.
+It's pretty powerfull but knowing all of its feature is a loss of time so I haven't realy configured it.
 Learn more [here](https://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
 # ZSH
 Make it default with `sudo chsh -s /bin/zsh $USER`
@@ -80,11 +80,13 @@ It's just a fork
 # Color chart
 The color chart html file contain all the color I use
 # Road map
+**Keep in mind that it's better to reduce the number of dependencies 
+  - To prevent the usage of unmaintained code
+  - To keep a minimal installation
+  - Every lighter options with similar capabilities will be prefered 
+**
 - Perfect the Qtile configuration
 - Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
   - Still need to see if this is a decent option since it need to be compiled etc it doesnt have a lot of users
 - A NixOS config file
-- Reduce the number of dependencies 
-  - To prevent the usage of unmaintained code
-  - To keep a minimal installation
-  - Every lighter options with similar capabilities will be prefered 
+
