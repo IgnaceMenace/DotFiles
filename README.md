@@ -81,9 +81,9 @@ It's just a fork
 The color chart html file contain all the color I use
 # Road map
 **Keep in mind that it's better to reduce the number of dependencies**
-  *- To prevent the usage of unmaintained code*
-  *- To keep a minimal installation*
-  *- Every lighter options with similar capabilities will be prefered*
+  - *To prevent the usage of unmaintained code*
+  - *To keep a minimal installation*
+  - *Every lighter options with similar capabilities will be prefered*
 - Perfect the Qtile configuration
 - Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
   - Still need to see if this is a decent option since it need to be compiled etc it doesnt have a lot of users
