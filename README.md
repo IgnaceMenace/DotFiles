@@ -13,6 +13,7 @@ cd DotFiles
 sudo chmod +x setupFedW.sh
 bash setupFedW.sh
 ```
+It will install everything and place the configuration files in the correct directories.
 # Neovim
 I want to change the configuration to write it in Lua and use the built in lsp client.
 I want to configure it for python, markdown and maybe rust if i start learning it. 
@@ -78,7 +79,7 @@ It's just a fork
 ## Waybar
 - JetBrains mono Fonts
 # Color chart
-The color chart html file contain all the color I use
+The color chart html file contain all the colors I usually use
 # Road map
 - Perfect the Qtile configuration
 - Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
