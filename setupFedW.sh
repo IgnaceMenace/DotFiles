@@ -21,6 +21,7 @@ pip \
 conda \
 htop \
 util-linux-user \
+#ulauncher \
 -y 
 
 # Enable rpm Fusion (free and non-free)
