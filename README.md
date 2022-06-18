@@ -79,12 +79,14 @@ and uncomment the code for swaybar which is the built in bar
 # Color chart
 The color chart html file contain all the color I use
 # Road map
+- Perfect the Qtile configuration
 - Python script for specific tiling in sway inspired by the one by nwg_piotr
-- Wifi menu in wofi and maybe screen management menu and tiling layout menu
-- Rofi instead of Wofi ?
-- Scripting the installation for Fedora and Arch
+- Tiling layout menu with wofi if I manage to build a python script for tiling
+- Rofi instead of Wofi because wofi is unmiantained
+  - Unfortnuately Rofi isn't Wayland native
+  - Maybe watch Onagre/PopLauncher  
 - Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
+  - Still need to see if this is a decent option since it need to be compiled etc it doesnt have a lot of users
 - A NixOS config file
-- Reduce the number of dependencies (wofi and j4 dmenu)
-- Wofi isn't actively developed anymore so might need to find an alternative
-- Midnight Commander theme
+- Reduce the number of dependencies
+  - j4-dmenu-desktop is needed to launch flatpak but it's another launcher
