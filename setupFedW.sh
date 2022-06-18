@@ -20,7 +20,6 @@ htop \
 neofetch \
 asciiquarium \
 cmatrix \
-#ulauncher \
 -y 
 
 # Enable rpm Fusion (free and non-free)
