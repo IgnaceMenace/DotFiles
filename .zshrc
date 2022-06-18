@@ -24,6 +24,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Personal config
 EDITOR=vim
-export EDITOR="$VISUAL"
+VISUAL=vim
 alias txkl="tmux kill-session"
 alias mc='. /usr/libexec/mc/mc-wrapper.sh'
