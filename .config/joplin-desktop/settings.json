@@ -30,5 +30,5 @@
 	],
 	"theme": 6,
 	"sync.target": 3,
-	"editor": "/bin/flatpak-spawn --host /usr/bin/foot vim"
+	"editor": "/bin/flatpak-spawn --host /usr/bin/foot nvim"
 }
