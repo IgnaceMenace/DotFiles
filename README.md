@@ -97,6 +97,7 @@ The color chart html file contain all the colors I usually use
 # Personal thoughts
 - I tried the nnn file manager and can't geet used to it.
 - I'll keep an eye on Helix which is a nice contender to Neovim
+- Eww widgets are looking good and powerfull
 - Every software sucks
 - The personal script for Sway isn't the best thing (why I might switch to Qtile)
 - Powerlevel10k creates tons of glitches when you resize a terminal window (might switch to starship)
