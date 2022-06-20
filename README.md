@@ -76,7 +76,9 @@ The configuration require multiple dependencies
 The sway config can be run without Waybar if you comment the code that call it
 and uncomment the code for swaybar which is the built in bar
 There is a python script to automatically alternate the tiling layout in the config file.
-It's just a fork
+It's just a fork.
+The limitations of this script are annoying. I can't stack all the windows as I'm used to do.
+Thats why I can easily disable it.
 
 ## Waybar
 - JetBrains mono Fonts
@@ -93,3 +95,5 @@ The color chart html file contain all the colors I usually use
 - I tried the nnn file manager and can't geet used to it.
 - I'll keep an eye on Helix which is a nice contender to Neovim
 - Every software sucks
+- The personal script for Sway isn't the best thing (why I might switch to Qtile)
+- Powerlevel10k creates tons of glitch when you resize a terminal window (might switch to starship)
