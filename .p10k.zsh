@@ -38,19 +38,23 @@
   autoload -Uz is-at-least && is-at-least 5.1 || return
 
   # Prompt colors.
-  local grey='242'
-  local red='#FF5C57'
-  local yellow='#F3F99D'
-  local blue='#57C7FF'
-  local magenta='#FF6AC1'
-  local cyan='#9AEDFE'
-  local white='#F1F1F0'
+  local grey='#fbf1c7'
+  local red='#bf616a'
+  local yellow='#ebcb8b'
+  local blue='#88c0d0'
+  local magenta='#b48ead'
+  local cyan='#8fbcbb'
+  local white='#d8dee9'
 
   # Left prompt segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
+    anaconda
+    toolbox
+    pyenv
     context                   # user@host
     dir                       # current directory
+    nix_shell
     vcs                       # git status
     command_execution_time    # previous command duration
     # =========================[ Line #2 ]=========================
@@ -69,7 +73,8 @@
     # =========================[ Line #2 ]=========================
     newline                   # \n
   )
-
+  typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND='#bf616a'
+  typeset -g POWERLEVEL9K_ANACONDA_BACKGROUND=0
   # Basic style options that define the overall prompt look.
   typeset -g POWERLEVEL9K_BACKGROUND=                            # transparent background
   typeset -g POWERLEVEL9K_{LEFT,RIGHT}_{LEFT,RIGHT}_WHITESPACE=  # no surrounding whitespace
