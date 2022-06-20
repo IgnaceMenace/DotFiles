@@ -89,3 +89,7 @@ The color chart html file contain all the colors I usually use
 - *To prevent the usage of unmaintained code*
 - *To keep a minimal installation*
 - *Every lighter options with similar capabilities will be prefered*
+# Personal thoughts
+- I tried the nnn file manager and can't geet used to it.
+- I'll keep an eye on Helix which is a nice contender to Neovim
+- Every software sucks
