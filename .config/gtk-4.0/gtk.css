@@ -2,14 +2,17 @@
 https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1.1/named-colors.html
 https://www.reddit.com/r/gnome/comments/tp3v7d/theming_in_libadwaita_is_pretty_nice/
 */
+
 window{
 border-radius: 0px;
 }
 
+*{
+font-family: JetBrainsMono NF;
+}
+
 headerbar {
-/*
 background-image: linear-gradient(to bottom, #bf616a, #1d1f21); 
-*/
 }
 
 @define-color accent_bg_color #88c0d0;
