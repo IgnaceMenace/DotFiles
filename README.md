@@ -35,6 +35,9 @@ Install powerlevel10K theme with
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
+The powerlevel10k themes are divided in 2:
+- .p10k.zsh is minimalist and never glitch
+- .p10k.zsh.old is full featured and beautiful but you always have to Ctrl+l to clear after a resize
 # Joplin
 In `Tools/Options/General`
 - `Path` write `/bin/flatpak-spawn`
