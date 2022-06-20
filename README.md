@@ -83,9 +83,6 @@ It's just a fork
 # Color chart
 The color chart html file contain all the colors I usually use
 # Road map
-- Perfect the Qtile configuration
-- Red light there is a redshift [fork](https://github.com/giucam/redshift) that works on Wayland
-  - Still need to see if this is a decent option since it need to be compiled etc it doesnt have a lot of users
 - A NixOS config file
 
 **Keep in mind that it's better to reduce the number of dependencies**
