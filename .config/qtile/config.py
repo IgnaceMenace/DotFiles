@@ -49,40 +49,62 @@ keys = [
     Key([mod, "shift"], "c", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "shift"], "e", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "d", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    # Switch workspace (I wrote this like a monkey)
+    Key([mod], "ampersand", lazy.group["1"].toscreen(), desc="Switch to group {}".format("1")),
+    Key([mod], "eacute", lazy.group["2"].toscreen(), desc="Switch to group {}".format("2")),
+    Key([mod], "quotedbl", lazy.group["3"].toscreen(), desc="Switch to group {}".format("3")),
+    Key([mod], "apostrophe", lazy.group["4"].toscreen(), desc="Switch to group {}".format("4")),
+    Key([mod], "parenleft", lazy.group["5"].toscreen(), desc="Switch to group {}".format("5")),
+    Key([mod], "section", lazy.group["6"].toscreen(), desc="Switch to group {}".format("6")),
+    Key([mod], "egrave", lazy.group["7"].toscreen(), desc="Switch to group {}".format("7")),
+    Key([mod], "exclam", lazy.group["8"].toscreen(), desc="Switch to group {}".format("8")),
+    Key([mod], "ccedilla", lazy.group["9"].toscreen(), desc="Switch to group {}".format("9")),
+    Key([mod], "agrave", lazy.group["10"].toscreen(), desc="Switch to group {}".format("10")),
+    # Move window to a workspace (also wrote this like a monkey)
+    Key([mod, "shift"], "ampersand", lazy.window.togroup("1", switch_group=True), desc="Switch to group {}".format("1")),
+    Key([mod, "shift"], "eacute", lazy.window.togroup("2", switch_group=True), desc="Switch to group {}".format("2")),
+    Key([mod, "shift"], "quotedbl", lazy.window.togroup("3", switch_group=True), desc="Switch to group {}".format("3")),
+    Key([mod, "shift"], "apostrophe", lazy.window.togroup("4", switch_group=True), desc="Switch to group {}".format("4")),
+    Key([mod, "shift"], "parenleft", lazy.window.togroup("5", switch_group=True), desc="Switch to group {}".format("5")),
+    Key([mod, "shift"], "section", lazy.window.togroup("6", switch_group=True), desc="Switch to group {}".format("6")),
+    Key([mod, "shift"], "egrave", lazy.window.togroup("7", switch_group=True), desc="Switch to group {}".format("7")),
+    Key([mod, "shift"], "exclam", lazy.window.togroup("8", switch_group=True), desc="Switch to group {}".format("8")),
+    Key([mod, "shift"], "ccedilla", lazy.window.togroup("9", switch_group=True), desc="Switch to group {}".format("9")),
+    Key([mod, "shift"], "agrave", lazy.window.togroup("10", switch_group=True), desc="Switch to group {}".format("10")),
 ]
 
-groups = [Group(i) for i in "123456789"]
-
+groups = [Group(i) for i in ["1","2","3","4","5","6","7","8","9","10"]]
+"""
 for i in groups:
     keys.extend(
         [
             # mod1 + letter of group = switch to group
             Key(
                 [mod],
-                i.name,
-                lazy.group[i.name].toscreen(),
-                desc="Switch to group {}".format(i.name),
+                http://i.name,
+                http://lazy.group[http://i.name].toscreen(),
+                desc="Switch to group {}".format(http://i.name),
             ),
-            # mod1 + shift + letter of group = switch to & move focused window to group
+            # mod1 + shift + letter of group = switch to &amp; move focused window to group
             Key(
                 [mod, "shift"],
-                i.name,
-                lazy.window.togroup(i.name, switch_group=True),
-                desc="Switch to & move focused window to group {}".format(i.name),
+                http://i.name,
+                lazy.window.togroup(http://i.name, switch_group=True),
+                desc="Switch to &amp; move focused window to group {}".format(http://i.name),
             ),
             # Or, use below if you prefer not to switch to that group.
             # # mod1 + shift + letter of group = move focused window to group
-            # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-            #     desc="move focused window to group {}".format(i.name)),
+            # Key([mod, "shift"], http://i.name, lazy.window.togroup(http://i.name),
+            #     desc="move focused window to group {}".format(https://t.co/IugTIc4A5C)),
         ]
     )
-
+"""
 layouts = [
-    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
-    layout.Max(),
+    #layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
+    #layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
-    # layout.Bsp(),
+     layout.Bsp(),
     # layout.Matrix(),
     # layout.MonadTall(),
     # layout.MonadWide(),
@@ -102,7 +124,7 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        bottom=bar.Bar(
+        top=bar.Bar(
             [
                 widget.CurrentLayout(),
                 widget.GroupBox(),
@@ -115,7 +137,7 @@ screens = [
                     name_transform=lambda name: name.upper(),
                 ),
                 widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                widget.TextBox("Press &amp;lt;M-r&amp;gt; to spawn", foreground="#d75f5f"),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
                 widget.Systray(),
