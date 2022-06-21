@@ -8,7 +8,7 @@ Take whatever you want, it's free.
 - Give the installation script permission to be executed
 - Execute the script
 ```
-git clone https://github.com/IgnaceMenace/DotFiles
+git clone --recurse-submodule https://github.com/IgnaceMenace/DotFiles
 cd DotFiles
 sudo chmod +x setupFedW.sh
 bash setupFedW.sh
