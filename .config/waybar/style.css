@@ -39,7 +39,7 @@ window#waybar.hidden {
     border-bottom: 3px solid #d8dee9;
 }
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #d08770;
 }
 #workspaces {
 	padding: 0 10px;
