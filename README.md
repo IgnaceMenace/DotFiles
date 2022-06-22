@@ -75,6 +75,8 @@ The configuration require multiple dependencies
   - If you want to change glyphs get them [here](https://fontawesome.com/v5/search?s=solid%2Cbrands)
 - Alacritty
   - Might be replaced by Foot terminal
+- Mako
+  - Notification daemon
 
 The sway config can be run without Waybar if you comment the code that call it
 and uncomment the code for swaybar which is the built in bar
