@@ -69,6 +69,7 @@ default_floating_border none
 client.focused #88c0d0 #88c0d0 #1d1f21 #88c0d0 #88c0d0
 client.focused_inactive #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
 client.unfocused #1d1f21 #1d1f21 #88c0d0 #1d1f21 #1d1f21
+client.urgent #1d1f21 #d08770 #d8dee9 #d08770 #d08770
 
 ### Idle configuration
 #
