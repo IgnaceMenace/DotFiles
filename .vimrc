@@ -1,5 +1,3 @@
-"Simple configuration of Vim with no-plugin to keep it's responsivness and stability
-"To have a more complete IDE check my NeoVim init.vim
 :set number
 :set relativenumber
 vnoremap <C-c> "+y
