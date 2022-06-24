@@ -8,7 +8,7 @@ map <C-p> "+P
 :set shiftwidth=4
 :set smarttab
 :set softtabstop=4
-:set autoindent
+":set autoindent
 :set encoding=utf-8
 ":set colorcolumn=80
 :syntax on
