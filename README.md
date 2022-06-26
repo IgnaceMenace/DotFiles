@@ -91,6 +91,7 @@ Thats why I can easily disable it.
 The color chart html file contain all the colors I usually use
 # Road map
 - A NixOS config file
+- Touchpad configuration with libinput-gestures
 
 **Keep in mind that it's better to reduce the number of dependencies**
 - *To prevent the usage of unmaintained code*
