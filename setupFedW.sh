@@ -43,6 +43,7 @@ sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
 # Install tmuxp
 pip install tmuxp
+pip install neovim
 
 # Install Pop OS Shell extension for Gnome
 sudo dnf install gnome-shell-extension-pop-shell xprop
