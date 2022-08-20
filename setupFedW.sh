@@ -18,6 +18,7 @@ toolbox \
 pip \
 conda \
 htop \
+btop \
 neofetch \
 asciiquarium \
 cmatrix \
