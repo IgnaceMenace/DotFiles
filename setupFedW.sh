@@ -10,6 +10,7 @@ vim \
 pavucontrol \
 util-linux-user \
 wl-clipboard \
+NetworkManager \
 NetworkManager-tui \
 light \
 mc \
@@ -21,10 +22,18 @@ neofetch \
 asciiquarium \
 cmatrix \
 mako \
+git \
+nautilus \
+gnome-calculator \
+firefox \
 -y 
+
+# Enable network manager (!! Need to be verified!!)
+sudo systemctl enable NetworkManager
 
 # Enable rpm Fusion (free and non-free)
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+
 # Install  the multimedia codecs 
 sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel -y
 
@@ -43,6 +52,8 @@ sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
 # Install tmuxp
 pip install tmuxp
+
+# Install Neovim python extension
 pip install neovim
 
 # Install Pop OS Shell extension for Gnome
