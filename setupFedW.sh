@@ -65,7 +65,10 @@ sudo sed -i '9i\fastestmirror=true' /etc/dnf/dnf.conf
 sudo sed -i '10i\max_parrallel_downloads=10' /etc/dnf/dnf.conf
 sudo dnf clean all
 
-
+# Firmware update
+sudo fwupdmgr refresh
+sudo fwupdmgr get-updates
+sudo fwupdmgr update
 
 # Install JetBrains patched fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
