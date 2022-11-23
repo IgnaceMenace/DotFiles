@@ -92,6 +92,8 @@ The color chart html file contain all the colors I usually use
 # Road map
 - A NixOS config file
 - Touchpad configuration with libinput-gestures
+- X11 based window maanger configuration for compatibility for Ms Teams or else
+- wayland based policy kit to be free from xwayland
 
 **Keep in mind that it's better to reduce the number of dependencies**
 - *To prevent the usage of unmaintained code*
@@ -100,7 +102,8 @@ The color chart html file contain all the colors I usually use
 # Personal thoughts
 - I tried the nnn file manager and can't geet used to it.
 - I'll keep an eye on Helix which is a nice contender to Neovim
-- Eww widgets are looking good and powerfull
+- Eww widgets are looking good and powerfull but the configuration files looks disgusting
 - Every software sucks
 - The personal script for Sway isn't the best thing (why I might switch to Qtile or hyprland)
 - Powerlevel10k creates tons of glitches when you resize a terminal window (might switch to starship)
+- Tiling window manager are not perfect at all but happen to work better in most situations
