@@ -32,6 +32,9 @@ firefox \
 # Enable network manager (!! Need to be verified!!)
 sudo systemctl enable NetworkManager
 
+# Install Flatpak
+sudo dnf install flatpak -y
+
 # Add rawhide newest kernel with no debug flag
 #sudo dnf config-manager --add-repo=http://dl.fedoraproject.org/pub/alt/rawhide-kernel-nodebug/fedora-rawhide-kernel-nodebug.repo
 #sudo dnf upgrade
