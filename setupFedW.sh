@@ -32,6 +32,10 @@ firefox \
 # Enable network manager (!! Need to be verified!!)
 sudo systemctl enable NetworkManager
 
+# Add rawhide newest kernel with no debug flag
+#sudo dnf config-manager --add-repo=http://dl.fedoraproject.org/pub/alt/rawhide-kernel-nodebug/fedora-rawhide-kernel-nodebug.repo
+#sudo dnf upgrade
+
 # Enable rpm Fusion (free and non-free)
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
