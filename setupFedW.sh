@@ -32,6 +32,9 @@ firefox \
 # Enable network manager (!! Need to be verified!!)
 sudo systemctl enable NetworkManager
 
+# Install policy kit for any DE
+sudo dnf install lxpolkit -y
+
 # Install Flatpak
 sudo dnf install flatpak -y
 
