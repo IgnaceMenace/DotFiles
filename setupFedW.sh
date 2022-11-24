@@ -27,6 +27,7 @@ git \
 nautilus \
 gnome-calculator \
 firefox \
+qbittorrent \
 -y 
 
 # Enable network manager (!! Need to be verified!!)
