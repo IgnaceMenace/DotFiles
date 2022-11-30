@@ -66,3 +66,5 @@ rm setupFedW.sh
 cd ..
 rsync -a DotFiles/ ~
 echo reboot to apply all changes
+
+echo work in progress server installation (Nextcloud, gitlab)
