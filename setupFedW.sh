@@ -28,6 +28,7 @@ nautilus \
 gnome-calculator \
 firefox \
 qbittorrent \
+nmap \
 -y 
 
 # Enable network manager (!! Need to be verified!!)
