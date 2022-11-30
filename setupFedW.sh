@@ -29,6 +29,7 @@ gnome-calculator \
 firefox \
 qbittorrent \
 nmap \
+tmux \
 -y 
 
 # Enable network manager (!! Need to be verified!!)
