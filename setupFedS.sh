@@ -97,3 +97,10 @@ echo HandleLidSwitch=ignore
 echo LidSwitchIgnoreInhibited=no
 echo this still needs to be automated
 sudo nvim /etc/systemd/logind.conf
+
+# Create the folder for nginx et the yml file
+
+# Create the folder for nextcloud and the yml file
+
+# Same for gitlab and wireguard ?
+
