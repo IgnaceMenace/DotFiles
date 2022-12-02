@@ -19,6 +19,7 @@ cmatrix \
 git \
 nmap \
 tmux \
+foot \
 -y 
 
 # Enable network manager (!! Need to be verified!!)
@@ -56,15 +57,43 @@ unzip JetBrainsMono.zip -d JetBrainsMono/
 sudo mv JetBrainsMono /usr/share/fonts/JetBrainsMono
 
 # Move the configuration files
-rsync -a Pictures/Wallpapers ~/Pictures
 rm -rf Pictures/Wallpapers
 rm -rf .git
 rm JetBrainsMono.zip
 rm colorChart.html
 rm README.md
 rm setupFedW.sh
+rm setupFedS.sh
 cd ..
 rsync -a DotFiles/ ~
 echo reboot to apply all changes
 
 echo work in progress server installation (Nextcloud, gitlab)
+
+# Docker clean install
+ sudo dnf remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-selinux \
+                  docker-engine-selinux \
+                  docker-engine
+sudo dnf -y install dnf-plugins-core
+
+sudo dnf config-manager \
+    --add-repo \
+    https://download.docker.com/linux/fedora/docker-ce.repo
+    
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# Stop reacting to lid switch on and off so laptop server can run closed
+echo HandleLidSwitch=ignore
+echo LidSwitchIgnoreInhibited=no
+echo this still needs to be automated
+sudo nvim /etc/systemd/logind.conf
