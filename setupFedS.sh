@@ -118,7 +118,7 @@ nextcloud/all-in-one:latest
 export GITLAB_HOME=/srv/gitlab
 
 sudo docker run --detach \
-  --hostname gitlab.example.com \
+  --hostname gitlab.ignace-parmentier.dns.army \
   --publish 444:443 --publish 82:80 --publish 23:22 \
   --name gitlab \
   --restart always \
