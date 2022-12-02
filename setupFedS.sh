@@ -70,6 +70,8 @@ echo reboot to apply all changes
 
 echo work in progress server installation (Nextcloud, gitlab)
 
+sudo dnf install cockpi-pcp
+
 # Docker clean install
  sudo dnf remove docker \
                   docker-client \
