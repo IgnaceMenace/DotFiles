@@ -101,6 +101,16 @@ sudo nvim /etc/systemd/logind.conf
 # Create the folder for nginx et the yml file
 
 # Create the folder for nextcloud and the yml file
+# For x64 CPUs: behind a firewall
+sudo docker run \
+--sig-proxy=false \
+--name nextcloud-aio-mastercontainer \
+--restart always \
+--publish 8080:8080 \
+-e APACHE_PORT=11000 \
+--volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
+--volume /var/run/docker.sock:/var/run/docker.sock:ro \
+nextcloud/all-in-one:latest
 
 # Same for gitlab and wireguard ?
 
