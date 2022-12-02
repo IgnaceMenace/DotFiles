@@ -90,6 +90,7 @@ Thats why I can easily disable it.
 # Color chart
 The color chart html file contain all the colors I usually use
 # Road map
+- Maintain neovim configuration
 - A NixOS config file
 - Touchpad configuration with libinput-gestures
 - X11 based window maanger configuration for compatibility for Ms Teams or else
