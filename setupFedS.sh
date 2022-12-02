@@ -114,5 +114,20 @@ sudo docker run \
 --volume /var/run/docker.sock:/var/run/docker.sock:ro \
 nextcloud/all-in-one:latest
 
-# Same for gitlab and wireguard ?
+# Gitlab
+export GITLAB_HOME=/srv/gitlab
+
+sudo docker run --detach \
+  --hostname gitlab.example.com \
+  --publish 444:443 --publish 82:80 --publish 23:22 \
+  --name gitlab \
+  --restart always \
+  --volume $GITLAB_HOME/config:/etc/gitlab:Z \
+  --volume $GITLAB_HOME/logs:/var/log/gitlab:Z \
+  --volume $GITLAB_HOME/data:/var/opt/gitlab:Z \
+  --shm-size 256m \
+  gitlab/gitlab-ee:latest
+
+
+# Same for wireguard ?
 
