@@ -130,6 +130,6 @@ sudo docker run --detach \
   -e GITLAB_ROOT_PASSWORD="changeme" \
   gitlab/gitlab-ee:latest
 
-
+#  sudo docker exec -it gitlab  gitlab-rake db:seed_fu RAILS_ENV=production
 # Same for wireguard ?
 
