@@ -126,6 +126,8 @@ sudo docker run --detach \
   --volume $GITLAB_HOME/logs:/var/log/gitlab:Z \
   --volume $GITLAB_HOME/data:/var/opt/gitlab:Z \
   --shm-size 256m \
+  -e GITLAB_ROOT_EMAIL="igparmentier@gmail.com" \
+  -e GITLAB_ROOT_PASSWORD="changeme" \
   gitlab/gitlab-ee:latest
 
 
