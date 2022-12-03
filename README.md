@@ -91,6 +91,7 @@ Thats why I can easily disable it.
 The color chart html file contain all the colors I usually use
 # Road map
 - Maintain neovim configuration
+- Create a container file with the tools i need for dev (nvim tmux ranger etc)
 - A NixOS config file
 - Touchpad configuration with libinput-gestures
 - X11 based window maanger configuration for compatibility for Ms Teams or else
