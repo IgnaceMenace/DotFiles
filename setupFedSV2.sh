@@ -59,7 +59,7 @@ dnf-plugins-core \
 docker-ce \
 docker-ce-cli \
 containerd.io \
-docker-compose-plugin
+docker-compose-plugin \
 -y 
 
 # Enable services
