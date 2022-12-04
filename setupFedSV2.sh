@@ -92,3 +92,14 @@ rm setupFedW.sh
 rm setupFedS.sh
 cd ..
 rsync -a DotFiles/ ~
+
+# Docker services 
+
+## Nginx proxy manager
+## got to create the yml file
+
+## Portainer
+sudo docker volume create portainer_data
+## Nextcloud
+
+## Gitlab
