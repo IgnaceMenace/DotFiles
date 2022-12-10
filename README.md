@@ -94,6 +94,7 @@ The color chart html file contain all the colors I usually use
   - Zellij instead of tmux
   - helix instead of neovim
   - alacritty instead of foot
+  - starchip instead of powerlevel10k
 - Maintain neovim configuration
 - Create a container file with the tools i need for dev (nvim tmux ranger etc)
 - A NixOS config file
