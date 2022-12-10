@@ -30,6 +30,7 @@ firefox \
 qbittorrent \
 nmap \
 tmux \
+bmon \
 -y 
 
 # Enable network manager (!! Need to be verified!!)
