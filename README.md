@@ -90,6 +90,10 @@ Thats why I can easily disable it.
 # Color chart
 The color chart html file contain all the colors I usually use
 # Road map
+- Create an alternative with Rust based tools (because I'm stupid)
+  - Zellij instead of tmux
+  - helix instead of neovim
+  - alacritty instead of foot
 - Maintain neovim configuration
 - Create a container file with the tools i need for dev (nvim tmux ranger etc)
 - A NixOS config file
