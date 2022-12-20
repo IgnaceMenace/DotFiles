@@ -74,6 +74,9 @@ pip install neovim
 # Install Pop OS Shell extension for Gnome
 sudo dnf install gnome-shell-extension-pop-shell xprop
 
+# Install Joplin the recommended way
+#wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+
 # DNF tweak
 sudo sed -i '9i\fastestmirror=true' /etc/dnf/dnf.conf
 sudo sed -i '10i\max_parrallel_downloads=10' /etc/dnf/dnf.conf
