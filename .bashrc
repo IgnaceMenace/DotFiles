@@ -1,5 +1,6 @@
 #
 # ~/.bashrc
 #
-export VISUAL=vim
+export VISUAL=hx
 export EDITOR="$VISUAL"
+eval "$(starship init bash)"
