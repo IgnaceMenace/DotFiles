@@ -32,6 +32,7 @@ tmux \
 bmon \
 wine \
 gnome-tweaks \
+npm \
 -y 
 
 # Rust Alternatives work in progress
