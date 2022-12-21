@@ -33,6 +33,30 @@ tmux \
 bmon \
 -y 
 
+# Rust Alternatives work in progress
+## Starship
+curl -sS https://starship.rs/install.sh | sh
+## Zellij
+sudo dnf copr enable varlad/zellij -y
+sudo dnf install zellij -y
+## Helix
+sudo dnf copr enable varlad/helix -y
+sudo dnf install helix -y
+### LSP ofr helix
+sudo dnf install python-lsp-server -y
+#### or pip install python-lsp-server
+## Alacritty
+sudo dnf install alacritty -y
+
+# DIfferent install
+
+# Remove software we won't use or need to reinstall differently
+sudo dnf remove \
+libreoffice-writer \
+libreoffice-calc \
+libreoffice-impress \
+-y
+
 # Enable network manager (!! Need to be verified!!)
 sudo systemctl enable NetworkManager
 
@@ -57,13 +81,18 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 # Make Zsh default shell
-sudo chsh -s /bin/zsh $USER
+#sudo chsh -s /bin/zsh $USER
 
 # Enable flathub repo
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Give flatpaks access to GTK theme
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
+
+# install some flatpak
+flatpak install flathub org.libreoffice.LibreOffice
+flatpak install flathub org.gimp.GIMP
+flatpak install flathub org.qbittorrent.qBittorrent
 
 # Install tmuxp
 pip install tmuxp
