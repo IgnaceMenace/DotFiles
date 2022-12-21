@@ -97,6 +97,7 @@ sudo flatpak override --filesystem=xdg-config/gtk-4.0
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub org.gimp.GIMP
 flatpak install flathub org.qbittorrent.qBittorrent
+flatpak install flathub com.vscodium.codium
 
 # Install tmuxp
 pip install tmuxp
