@@ -1,0 +1,7 @@
+layout {
+    pane command="bmon"
+    pane split_direction="vertical" {
+        pane command="cmatrix"
+        pane command="neofetch"
+    }
+}
