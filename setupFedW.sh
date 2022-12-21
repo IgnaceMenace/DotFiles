@@ -31,6 +31,7 @@ nmap \
 tmux \
 bmon \
 wine \
+gnome-tweaks \
 -y 
 
 # Rust Alternatives work in progress
