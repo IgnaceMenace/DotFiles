@@ -33,6 +33,7 @@ bmon \
 wine \
 gnome-tweaks \
 npm \
+asciidoctor \
 -y 
 
 # Rust Alternatives work in progress
