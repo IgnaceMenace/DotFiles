@@ -27,10 +27,10 @@ git \
 nautilus \
 gnome-calculator \
 firefox \
-qbittorrent \
 nmap \
 tmux \
 bmon \
+wine \
 -y 
 
 # Rust Alternatives work in progress
@@ -47,6 +47,9 @@ sudo dnf install python-lsp-server -y
 #### or pip install python-lsp-server
 ## Alacritty
 sudo dnf install alacritty -y
+
+# Deprecated installation
+# sudo dnf install qbittorrent -y
 
 # DIfferent install
 
