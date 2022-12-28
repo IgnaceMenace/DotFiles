@@ -90,15 +90,9 @@ Thats why I can easily disable it.
 # Color chart
 The color chart html file contain all the colors I usually use
 # Road map
-- Create an alternative with Rust based tools (because I'm stupid)
-  - Zellij instead of tmux
-  - helix instead of neovim
-  - alacritty or wez's term instead of foot
-  - starchip instead of powerlevel10k
-- Maintain neovim configuration
+- Create a dark solarized and/or Arch and/or NixOS equivalent 
 - Create a container file with the tools i need for dev (nvim tmux ranger etc)
-- A NixOS config file
-- Touchpad configuration with libinput-gestures
+- Touchpad configuration with sway 1.8
 - X11 based window maanger configuration for compatibility for Ms Teams or else
 - wayland based policy kit to be free from xwayland
 
@@ -111,6 +105,5 @@ The color chart html file contain all the colors I usually use
 - I'll keep an eye on Helix which is a nice contender to Neovim
 - Eww widgets are looking good and powerfull but the configuration files looks disgusting
 - Every software sucks
-- The personal script for Sway isn't the best thing (why I might switch to Qtile or hyprland)
-- Powerlevel10k creates tons of glitches when you resize a terminal window (might switch to starship)
+- The personal script for Sway isn't the best thing (why I might switch to Qtile or hyprland or skyWM)
 - Tiling window manager are not perfect at all but happen to work better in most situations
