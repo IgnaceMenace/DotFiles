@@ -34,6 +34,7 @@ wine \
 gnome-tweaks \
 npm \
 asciidoctor \
+gammastep \
 -y 
 
 # Rust Alternatives work in progress
