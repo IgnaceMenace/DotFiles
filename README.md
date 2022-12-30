@@ -90,6 +90,8 @@ Thats why I can easily disable it.
 # Color chart
 The color chart html file contain all the colors I usually use
 # Road map
+- BTRFS Snapshots
+- Developing [WayPop](https://github.com/IgnaceMenace/WayPop-Prototype)
 - Create a dark solarized and/or Arch and/or NixOS equivalent 
 - Create a container file with the tools i need for dev (nvim tmux ranger etc)
 - Touchpad configuration with sway 1.8
