@@ -240,6 +240,9 @@ Input "10874:35407:CASUE_USB_KB" {
 	# Set the shortcut to change between 2 configuration of multiple monitor
     bindsym $mod+p output eDP-1 enable
     bindsym $mod+Shift+p output eDP-1 disable
+# Uncomment this if you are runing a laptop
+#bindswitch --reload --locked lid:on output eDP-1 disable                                                    
+#bindswitch --reload --locked lid:off output eDP-1 enable        
 
 #
 # Layout stuff:
