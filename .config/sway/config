@@ -246,7 +246,7 @@ Input "10874:35407:CASUE_USB_KB" {
 #
 # Red lights
 #
-exec_always gammastep  -l 50:4 -t 5700:3000 
+#exec_always gammastep 
 
 #
 # Layout stuff:
