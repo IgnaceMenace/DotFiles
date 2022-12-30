@@ -243,6 +243,10 @@ Input "10874:35407:CASUE_USB_KB" {
 # Uncomment this if you are runing a laptop
 #bindswitch --reload --locked lid:on output eDP-1 disable                                                    
 #bindswitch --reload --locked lid:off output eDP-1 enable        
+#
+# Red lights
+#
+exec_always gammastep  -l 50:4 -t 5700:3000 
 
 #
 # Layout stuff:
