@@ -90,15 +90,15 @@ Thats why I can easily disable it.
 # Color chart
 The color chart html file contain all the colors I usually use
 # Road map
+## Important
 - BTRFS Snapshots ( snaper and Timeshift)
-- Use gammastep for redshift
-- Clamshell for lid switch actions
 - Developing [WayPop](https://github.com/IgnaceMenace/WayPop-Prototype)
-- Create a dark solarized and/or Arch and/or NixOS equivalent 
-- Create a container file with the tools i need for dev (nvim tmux ranger etc)
 - Touchpad configuration with sway 1.8
-- X11 based window maanger configuration for compatibility for Ms Teams or else
 - wayland based policy kit to be free from xwayland
+## Not very important
+- Create a dark solarized and/or Arch and/or NixOS equivalent 
+- Create a container file with the tools i need for dev or just a script (nvim tmux ranger etc)
+- X11 based window maanger configuration for compatibility for Ms Teams or else
 
 **Keep in mind that it's better to reduce the number of dependencies**
 - *To prevent the usage of unmaintained code*
