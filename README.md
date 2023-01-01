@@ -90,7 +90,7 @@ Thats why I can easily disable it.
 # Color chart
 The color chart html file contain all the colors I usually use
 # Road map
-- BTRFS Snapshots
+- BTRFS Snapshots ( snaper and Timeshift)
 - Use gammastep for redshift
 - Clamshell for lid switch actions
 - Developing [WayPop](https://github.com/IgnaceMenace/WayPop-Prototype)
