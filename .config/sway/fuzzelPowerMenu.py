@@ -15,7 +15,7 @@ def powerMenu():
   actions = (
     "swaymsg exit",
     "swaylock -C ~/.config/sway/swayLock.config",
-    "systemctl suspend",
+    "systemctl suspend && swaylock -C ~/.config/sway/swayLock.config",
     "systemctl hibernate",
     "systemctl reboot",
     "systemctl poweroff"
