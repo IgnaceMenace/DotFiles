@@ -46,11 +46,16 @@ sudo dnf install zellij -y
 ## Helix
 sudo dnf copr enable varlad/helix -y
 sudo dnf install helix -y
-### LSP ofr helix
+### LSP for helix
 sudo dnf install python-lsp-server -y
 #### or pip install python-lsp-server
 ## Alacritty
 sudo dnf install alacritty -y
+## Install Rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+## Install Rust-Analyzer
+rustup component add rust-analyzer
+sudo ln -s $(rustup which rust-analyzer ) /usr/local/bin/rust-analyzer
 
 # Deprecated installation
 # sudo dnf install qbittorrent -y
