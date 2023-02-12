@@ -91,7 +91,7 @@ Thats why I can easily disable it.
 The color chart html file contain all the colors I usually use
 # Road map
 ## Important
-- Flameshot support on sway
+- Needs to fix alternative layout not executing on resume from suspend or reboot (idk)
 - BTRFS Snapshots ( snaper and Timeshift)
 - Developing [WayPop](https://github.com/IgnaceMenace/WayPop-Prototype)
 - Touchpad configuration with sway 1.8
