@@ -52,7 +52,9 @@ mode "Alternating Layout" {
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
-bindsym $mod+a mode "Alternating Layout"
+bindsym $mod+alt+a mode "Alternating Layout"                                                                                                                                                                                      
+# This mode is deprecated since you should use the fuzzel menu now                                                                                                                                                                
+bindsym $mod+a exec python ~/.config/sway/layoutMenu.py    
 #
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
