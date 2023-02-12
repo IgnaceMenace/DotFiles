@@ -74,6 +74,8 @@ sudo systemctl enable NetworkManager
 
 # Install policy kit for any DE
 sudo dnf install lxpolkit -y
+# or
+#sudo dnf install polkit-kde -y
 
 # Install Flatpak
 sudo dnf install flatpak -y
