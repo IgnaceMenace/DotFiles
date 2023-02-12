@@ -21,6 +21,8 @@
 ### Autorization management from lxde (because Gnome-polkit doesn't work outside)
 #
 exec lxpolkit
+#exec /usr/libexec/kf5/polkit-kde-authentication-agent-1
+# Kde polkit agent support wayland but maybe you should add a special rule for this windows
 #
 ### Variables
 #
