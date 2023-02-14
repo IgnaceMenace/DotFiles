@@ -76,6 +76,7 @@ The configuration require multiple dependencies
   - Might be replaced by Foot terminal
 - Mako
   - Notification daemon
+- gammastep
 
 The sway config can be run without Waybar if you comment the code that call it
 and uncomment the code for swaybar which is the built in bar
