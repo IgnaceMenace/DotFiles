@@ -14,8 +14,7 @@ sudo chmod +x setupFedW.sh
 bash setupFedW.sh
 ```
 It will install everything and place the configuration files in the correct directories.
-## NixOS
-wip
+
 # Neovim
 I want to change the configuration to write it in Lua and use the built in lsp client.
 I want to configure it for python, markdown and maybe rust if i start learning it. 
