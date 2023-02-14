@@ -91,17 +91,16 @@ Thats why I can easily disable it.
 The color chart html file contain all the colors I usually use
 # Road map
 ## Important
-- BTRFS Snapshots ( snaper and Timeshift)
+
 - Touchpad configuration with sway 1.8
 - Wayland based policy kit to be free from xwayland
-- Manage sound with wireplumber wpctl ?
+- BTRFS Snapshots whith Snapper and Timeshift (Not the most useful on Fedora since my system never broke)
 ## Not very important
 - Nushell instead of bash ?
-- Fuzzel based Widget for (Bluetooth, WiFi, Output/Input, ...)
+- Fuzzel based Widget for (Bluetooth, WiFi, Output/Input, light/dark mode, ...)
 - hunter instead of ranger
 - Create a dark solarized and/or Arch and/or NixOS equivalent 
 - Create a container file with the tools i need for dev or just a script (nvim tmux ranger etc)
-- X11 based window maanger configuration for compatibility for Ms Teams or else
 
 **Keep in mind that it's better to reduce the number of dependencies**
 - *To prevent the usage of unmaintained code*
