@@ -97,7 +97,7 @@ The color chart html file contain all the colors I usually use
 - Manage sound with wireplumber wpctl ?
 ## Not very important
 - Nushell instead of bash ?
-- Fuzzel based Widget for (Bluetooth, WiFi, ...)
+- Fuzzel based Widget for (Bluetooth, WiFi, Output/Input, ...)
 - Create a dark solarized and/or Arch and/or NixOS equivalent 
 - Create a container file with the tools i need for dev or just a script (nvim tmux ranger etc)
 - X11 based window maanger configuration for compatibility for Ms Teams or else
