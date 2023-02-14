@@ -91,12 +91,12 @@ Thats why I can easily disable it.
 The color chart html file contain all the colors I usually use
 # Road map
 ## Important
-- Needs to fix alternative layout not executing on resume from suspend or reboot (idk)
 - BTRFS Snapshots ( snaper and Timeshift)
-- Developing [WayPop](https://github.com/IgnaceMenace/WayPop-Prototype)
 - Touchpad configuration with sway 1.8
-- wayland based policy kit to be free from xwayland
+- Wayland based policy kit to be free from xwayland
 ## Not very important
+- Nushell instead of bash ?
+- Fuzzel based Widget for (Bluetooth, WiFi, ...)
 - Create a dark solarized and/or Arch and/or NixOS equivalent 
 - Create a container file with the tools i need for dev or just a script (nvim tmux ranger etc)
 - X11 based window maanger configuration for compatibility for Ms Teams or else
