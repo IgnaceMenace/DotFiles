@@ -4,15 +4,6 @@
 # Find it online at https://man.archlinux.org/man/sway.5.en
 # https://man.archlinux.org/man/sway-bar.5.en
 #
-# This configuration is made by myself and is my first one
-# It still needs to be organized properly
-# It sill needs some improvments
-# - Mode for changing gaps
-# - Mode for changing red light
-# - Use pulseaudio instead of alsamixer maybe
-# - the launcher isn't the best one, I'm looking for another one that can launch Flatpaks
-# - maybe if i can use variable and shell script i can automate the cycle through 
-# the different dual display configurations
 # - I'm planing to build a gtk based menu similar to the GNOME one on the top right corner
 #
 # To display logs and visualise info
@@ -21,8 +12,8 @@
 ### Autorization management from lxde (because Gnome-polkit doesn't work outside)
 #
 exec lxpolkit
+#exec /usr/libexec/lxqt-policykit-agent
 #exec /usr/libexec/kf5/polkit-kde-authentication-agent-1
-# Kde polkit agent support wayland but maybe you should add a special rule for this windows
 #
 ### Variables
 #
@@ -52,9 +43,9 @@ mode "Alternating Layout" {
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
-bindsym $mod+alt+a mode "Alternating Layout"                                                                                                                                                                                      
-# This mode is deprecated since you should use the fuzzel menu now                                                                                                                                                                
-bindsym $mod+a exec python ~/.config/sway/layoutMenu.py    
+bindsym $mod+alt+a mode "Alternating Layout"
+# This mode is deprecated since you should use the fuzzel menu now
+bindsym $mod+a exec python ~/.config/sway/layoutMenu.py
 #
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -147,15 +138,16 @@ Input "10874:35407:CASUE_USB_KB" {
 
     # Media keys
     # With specific keys on laptop keyboard
-	bindsym XF86AudioMute exec amixer -D pipewire sset Master toggle
-    bindsym XF86AudioLowerVolume exec amixer -D pipewire sset Master 1%-
-    bindsym XF86AudioRaiseVolume exec amixer -D pipewire sset Master 1%+
+	bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+	bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+    bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+    bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
 	# With Function keys on external keyboard
-    bindsym F1 exec amixer -D pipewire sset Master toggle
-    bindsym F2 exec amixer -D pipewire sset Master 1%-
-    bindsym F3 exec amixer -D pipewire sset Master 1%+
-    bindsym F4 exec amixer -D pipewire sset Capture toggle
-    
+	
+	bindsym F4 exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle                               
+	bindsym F1 exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle                                   
+	bindsym F2 exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-                            
+	bindsym F3 exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+  
     # Calculator
 	bindsym F12 exec gnome-calculator
 	bindsym XF86Calculator exec gnome-calculator
@@ -244,13 +236,13 @@ Input "10874:35407:CASUE_USB_KB" {
 	# Set the shortcut to change between 2 configuration of multiple monitor
     bindsym $mod+p output eDP-1 enable
     bindsym $mod+Shift+p output eDP-1 disable
-# Uncomment this if you are runing a laptop
-#bindswitch --reload --locked lid:on output eDP-1 disable                                                    
-#bindswitch --reload --locked lid:off output eDP-1 enable        
+
+bindswitch --reload --locked lid:on output eDP-1 disable
+bindswitch --reload --locked lid:off output eDP-1 enable
 #
 # Red lights
 #
-#exec_always gammastep 
+exec_always gammastep
 
 #
 # Layout stuff:
