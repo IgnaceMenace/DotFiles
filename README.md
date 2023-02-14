@@ -94,6 +94,7 @@ The color chart html file contain all the colors I usually use
 - BTRFS Snapshots ( snaper and Timeshift)
 - Touchpad configuration with sway 1.8
 - Wayland based policy kit to be free from xwayland
+- Manage sound with wireplumber wpctl ?
 ## Not very important
 - Nushell instead of bash ?
 - Fuzzel based Widget for (Bluetooth, WiFi, ...)
