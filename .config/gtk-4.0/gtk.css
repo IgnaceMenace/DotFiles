@@ -7,13 +7,17 @@ window{
 border-radius: 0px;
 }
 
+/*
+Breaks the view in the gtk4 file picker !
+*/
 *{
 font-family: JetBrainsMono NF;
 }
 
+/*
 headerbar {
 background-image: linear-gradient(to bottom, #bf616a, #1d1f21); 
-}
+}*/
 
 @define-color accent_bg_color #88c0d0;
 @define-color accent_fg_color #d8dee9;
