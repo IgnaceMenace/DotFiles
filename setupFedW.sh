@@ -108,7 +108,7 @@ flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub org.gimp.GIMP
 flatpak install flathub org.qbittorrent.qBittorrent
 flatpak install flathub com.vscodium.codium
-flatpak install flathub io.podman_desktop.PodmanDesktop
+#flatpak install flathub io.podman_desktop.PodmanDesktop
 
 # Install tmuxp
 pip install tmuxp
