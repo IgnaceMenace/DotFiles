@@ -50,7 +50,7 @@ bindsym $mod+a exec python ~/.config/sway/layoutMenu.py
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu fuzzel -f JetBrainsMono -C ebcb8bff -b 1d1f21ff -T footclient -B 3 -m a3be8cff -t 88c0d0ff -S d8dee9ff -s bf616aff --show-actions
+set $menu fuzzel -f 'JetBrainsMono NF' -C ebcb8bff -b 1d1f21ff -T footclient -B 3 -m a3be8cff -t 88c0d0ff -S d8dee9ff -s bf616aff --show-actions
 #
 # Ricing
 #
