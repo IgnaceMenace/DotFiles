@@ -94,6 +94,7 @@ The color chart html file contain all the colors I usually use
 
 - Touchpad configuration with sway 1.8
 - Wayland based policy kit to be free from xwayland
+- Remove old useless config
 - BTRFS Snapshots whith Snapper and Timeshift (Not the most useful on Fedora since my system never broke)
 ## Not very important
 - Nushell instead of bash ?
