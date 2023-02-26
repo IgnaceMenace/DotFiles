@@ -1,19 +1,8 @@
 # Install dependencies and usefull light pckages
 sudo dnf install \
-sway \
-waybar \
-zsh \
-fuzzel \
-neovim \
-ranger \
 vim \
-pavucontrol \
 util-linux-user \
-wl-clipboard \
 NetworkManager \
-NetworkManager-tui \
-light \
-mc \
 toolbox \
 pip \
 conda \
@@ -22,20 +11,44 @@ btop \
 neofetch \
 asciiquarium \
 cmatrix \
-mako \
 git \
-nautilus \
-gnome-calculator \
-firefox \
 nmap \
-tmux \
 bmon \
 wine \
 gnome-tweaks \
 npm \
 asciidoctor \
+-y
+
+# For the WM
+sudo dnf install \
+sway \
+waybar \
+fuzzel \
+mako \
 gammastep \
--y 
+nautilus \
+gnome-calculator \
+firefox \
+light \
+NetworkManager-tui \
+wl-clipboard \
+pavucontrol \
+-y
+
+# Will be replaced by a rust alternative but not now
+sudo install \
+neovim \
+ranger \
+tmux \
+-y
+
+# Not using anymore
+# sudo dnf install \
+# zsh \
+# mc \
+# qbittorrent \
+# -y
 
 # Rust Alternatives work in progress
 ## Starship
@@ -57,11 +70,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rust-analyzer
 sudo ln -s $(rustup which rust-analyzer ) /usr/local/bin/rust-analyzer
 
-# Deprecated installation
-# sudo dnf install qbittorrent -y
-
-# DIfferent install
-
 # Remove software we won't use or need to reinstall differently
 sudo dnf remove \
 libreoffice-writer \
@@ -69,7 +77,7 @@ libreoffice-calc \
 libreoffice-impress \
 -y
 
-# Enable network manager (!! Need to be verified!!)
+# Enable network manager
 sudo systemctl enable NetworkManager
 
 # Install policy kit for any DE
@@ -90,9 +98,9 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 # Install  the multimedia codecs 
 sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel -y
 
-# Install powerlevel10k
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+# Install powerlevel10k (I'm using Starship now)
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+# echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 # Make Zsh default shell
 #sudo chsh -s /bin/zsh $USER
@@ -116,8 +124,8 @@ pip install tmuxp
 # Install Neovim python extension
 pip install neovim
 
-# Install Pop OS Shell extension for Gnome
-sudo dnf install gnome-shell-extension-pop-shell xprop
+# Install Pop OS Shell extension for Gnome (I'm going Vanilla Gnome and might not use it anymore)
+# sudo dnf install gnome-shell-extension-pop-shell xprop
 
 # Install Joplin the recommended way
 #wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
