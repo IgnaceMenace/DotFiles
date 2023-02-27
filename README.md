@@ -91,7 +91,7 @@ Thats why I can easily disable it.
 The color chart html file contain all the colors I usually use
 # Road map
 ## Important
-
+- Fix idle (need to swaylock before suspend so i don't to specify it in the powermenu and i can close my laptop and lock it at the same time)
 - Touchpad configuration with sway 1.8
 - Wayland based policy kit to be free from xwayland
 - Remove old useless config
