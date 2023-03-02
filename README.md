@@ -96,6 +96,7 @@ The color chart html file contain all the colors I usually use
 - Wayland based policy kit to be free from xwayland
 - Remove old useless config
 - BTRFS Snapshots whith Snapper and Timeshift (Not the most useful on Fedora since my system never broke)
+- Move away from Gnome software, even though I like the DE, Nautilus crash when handling large ammount of data and Gnome Software is just no working some times
 ## Not very important
 - Nushell instead of bash ?
 - Fuzzel based Widget for (Bluetooth, WiFi, Output/Input, light/dark mode, ...)
