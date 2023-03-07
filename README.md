@@ -89,6 +89,19 @@ Thats why I can easily disable it.
 - JetBrains mono Fonts
 # Color chart
 The color chart html file contain all the colors I usually use
+
+# X11
+I need a fallback option for Xorg since some features are eather not available on Wayland or not working fine on Wlroots.
+Previously I was using Gnome as a fallback but to maintain a lightweight system I decided to use I3 as a fallback.
+The config for I3 is very minimal and WIP since I don't want to spend too much time on a fallback mode.
+## Dependecies
+- i3
+- xrandr
+- xset
+- i3-bar
+- gnome-terminal
+- dmenu
+
 # Road map
 ## Important
 - Fix idle (need to swaylock before suspend so i don't to specify it in the powermenu and i can close my laptop and lock it at the same time)
