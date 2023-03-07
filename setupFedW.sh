@@ -37,7 +37,7 @@ pavucontrol \
 -y
 
 # Will be replaced by a rust alternative but not now
-sudo install \
+sudo dnf install \
 neovim \
 ranger \
 tmux \
@@ -49,6 +49,15 @@ tmux \
 # mc \
 # qbittorrent \
 # -y
+
+# Xorg fallback
+sudo dnf install \
+i3 \
+xset \
+xrandr \
+xinit \
+dmenu \
+-y
 
 # Rust Alternatives work in progress
 ## Starship
