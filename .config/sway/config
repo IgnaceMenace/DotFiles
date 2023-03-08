@@ -70,10 +70,13 @@ client.urgent #1d1f21 #d08770 #d8dee9 #d08770 #d08770
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
+#exec swayidle -w \
+#          timeout 300 'swaylock -C ~/.config/sway/swayLock.config' \
 #          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+#          before-sleep 'swaylock -C ~/.config/sway/swayLock.config'
+exec swayidle -w \
+			after-resume 'swaymsg "output * dpms on"' \
+			before-sleep 'swaylock -C ~/.config/sway/swayLock.config'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -82,7 +85,8 @@ bindsym $mod+z exec python ~/.config/sway/fuzzelPowerMenu.py
 #
 ### Output configuration
 #
-output * bg /home/pugnace/Pictures/Wallpapers/adwaitaDark2.jpg fill
+output * bg /home/pugnace/Pictures/Wallpapers/Background3.png fill
+#output * bg /home/pugnace/Pictures/Wallpapers/futurecity_dark1.png fill
 output Virtual-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
