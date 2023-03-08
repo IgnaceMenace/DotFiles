@@ -11,6 +11,7 @@ neofetch \
 nmap \
 ranger \
 rsync \
+python \
 -y
 
 ## Install usefull light packages
