@@ -15,10 +15,6 @@ bash setupFedW.sh
 ```
 It will install everything and place the configuration files in the correct directories.
 
-# Neovim
-I want to change the configuration to write it in Lua and use the built in lsp client.
-I want to configure it for python, markdown and maybe rust if i start learning it. 
-Maybe I will just switch to LuaVim or Lvim or just inspire myself.
 # GTK theme
 To let your flatpaks access the gtk theme you should run this command
 `flatpak override --filesystem=xdg-config/gtk-4.0`
@@ -53,37 +49,11 @@ sudo dnf install foot-terminfo
 Developed by the same dev as Foot, it's the replacent for wofi.
 No configuration file, you just give it arguments when calling it
 ## Sway
-
-You should probably adapt the keyboard Input to your own setup
-The configuration require multiple dependencies
-- Fuzzel
-- Nautilus
-- Alsamixer
-- Pulseaudio
-  - Pavucontrol (for waybar but not mandatory)
-- Grim
-- Light
-- Wl-clipboard (to copy the output of grim)
-- Waybar
-  - Can be replaced by SwayBar which is installed with Sway.
-  But it has less functionalities
-- Swaylock
-- Python + os package
-- JetBrains Mono Nerd Fonts 
-  - Find them [here](https://www.nerdfonts.com/font-downloads)
-  - If you want to change glyphs get them [here](https://fontawesome.com/v5/search?s=solid%2Cbrands)
-- Alacritty
-  - Might be replaced by Foot terminal
-- Mako
-  - Notification daemon
-- gammastep
-
-The sway config can be run without Waybar if you comment the code that call it
-and uncomment the code for swaybar which is the built in bar
 There is a python script to automatically alternate the tiling layout in the config file.
 It's just a fork.
 The limitations of this script are annoying. I can't stack all the windows as I'm used to do.
 Thats why I can easily disable it.
+Take a look at Persway !
 
 ## Waybar
 - JetBrains mono Fonts
@@ -104,7 +74,6 @@ The config for I3 is very minimal and WIP since I don't want to spend too much t
 
 # Road map
 ## Important
-- Fix idle (need to swaylock before suspend so i don't to specify it in the powermenu and i can close my laptop and lock it at the same time)
 - Touchpad configuration with sway 1.8
 - Wayland based policy kit to be free from xwayland 
 - Remove old useless config
