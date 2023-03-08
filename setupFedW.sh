@@ -34,6 +34,9 @@ conda \
 ## Install sway and associated packages
 sudo dnf install \
 sway \
+foot \
+grim \
+slurp \
 waybar \
 fuzzel \
 mako \
