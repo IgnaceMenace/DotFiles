@@ -75,7 +75,7 @@ window#waybar.hidden {
 
 #window,
 #workspaces {
-    margin: 0px 4px;
+    margin: 0px 0px;
 }
 
 #clock {
