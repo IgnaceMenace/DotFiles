@@ -75,6 +75,8 @@ The config for I3 is very minimal and WIP since I don't want to spend too much t
 # Road map
 ## Important
 - Touchpad configuration with sway 1.8
+- Oxydize the alternating layout
+- Create a master-tabbed layout
 - Wayland based policy kit to be free from xwayland 
 - Remove old useless config
 - BTRFS Snapshots whith Snapper and Timeshift (Not the most useful on Fedora since my system never broke)
