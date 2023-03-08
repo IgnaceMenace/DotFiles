@@ -72,6 +72,15 @@ The config for I3 is very minimal and WIP since I don't want to spend too much t
 - gnome-terminal
 - dmenu
 
+# Bleeding edge and testing
+*If you want to test next releases of fedora, use rawhide, but at your own risk*
+```
+sudo dnf upgrade --refresh
+sudo dnf install dnf-plugin-system-upgrade
+sudo dnf system-upgrade download --releasever=rawhide
+```
+rawhide or any other release server e.g. 38
+
 # Road map
 ## Important
 - Touchpad configuration with sway 1.8
