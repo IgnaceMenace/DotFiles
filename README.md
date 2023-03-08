@@ -84,6 +84,10 @@ rawhide or any other release server e.g. 38
 # Road map
 ## Important
 - Touchpad configuration with sway 1.8
+```
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
+```
 - Oxydize the alternating layout
 - Create a master-tabbed layout
 - Wayland based policy kit to be free from xwayland 
