@@ -135,6 +135,7 @@ flatpak install flathub org.libreoffice.LibreOffice -y
 flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub org.qbittorrent.qBittorrent -y
 flatpak install flathub com.usebottles.bottles -y
+flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
 
 # End Flatpaks
 
