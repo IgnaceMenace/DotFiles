@@ -104,12 +104,9 @@ The config for I3 is very minimal and WIP since I don't want to spend too much t
 
 # Road map
 ## Important
-- Reorganise the script so it's easier to comment section depending on the situation
-- automatic flatpak install validation
-- Remove dnf tweak when dnf5 will be default on fedora 38 or 39 since it doesn't require those tweaks anymore
 - Fix idle (need to swaylock before suspend so i don't to specify it in the powermenu and i can close my laptop and lock it at the same time)
 - Touchpad configuration with sway 1.8
-- Wayland based policy kit to be free from xwayland
+- Wayland based policy kit to be free from xwayland 
 - Remove old useless config
 - BTRFS Snapshots whith Snapper and Timeshift (Not the most useful on Fedora since my system never broke)
 - Move away from Gnome software, even though I like the DE, Nautilus crash when handling large ammount of data and Gnome Software is just no working some times
