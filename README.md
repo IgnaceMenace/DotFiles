@@ -88,18 +88,27 @@ rawhide or any other release server e.g. 38
 bindgesture swipe:right workspace prev
 bindgesture swipe:left workspace next
 ```
+- Switch to full systemD management
+  - I have no real reasons to do so but consistency 
+  - Systemd-boot instead of Grub
+  - systemd-networkd instead of network manager
+  
 - Oxydize the alternating layout
-- Create a master-tabbed layout
+- Create a master-stack layout
 - Wayland based policy kit to be free from xwayland 
 - Remove old useless config
-- BTRFS Snapshots whith Snapper and Timeshift (Not the most useful on Fedora since my system never broke)
-- Move away from Gnome software, even though I like the DE, Nautilus crash when handling large ammount of data and Gnome Software is just no working some times
+- Move away from Gnome software
+  - even though I like the DE, Nautilus crash when handling large ammount of data and Gnome Software is just no working some times
+  - I'll switch to Xfce tools or Cosmic tools once it will be released
 ## Not very important
-- Nushell instead of bash ?
+- Nushell or zsh instead of bash ?
+  - I first need to get good at shell scripting to have any reason to switch away from bash
 - Fuzzel based Widget for (Bluetooth, WiFi, Output/Input, light/dark mode, ...)
+  - Checkout my QuickMenu repo
+- BTRFS Snapshots whith Snapper and Timeshift
+  - Not very usefull on fedora since my system has never broke
 - hunter instead of ranger
-- Create a dark solarized and/or Arch and/or NixOS equivalent 
-- Create a container file with the tools i need for dev or just a script (nvim tmux ranger etc)
+  - Still needs some work IMO
 
 **Keep in mind that it's better to reduce the number of dependencies**
 - *To prevent the usage of unmaintained code*
