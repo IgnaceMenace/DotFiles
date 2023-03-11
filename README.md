@@ -91,6 +91,7 @@ rawhide or any other release server e.g. 38
 - Ranger -> Hunter [X] (p)
 - Waybar -> Eww [V] (f)
 - Linux -> RedoxOS [X]
+- Neofetch -> Macchina [X]
 
 [x] = WIP
 
