@@ -92,6 +92,7 @@ rawhide or any other release server e.g. 38
 - Waybar -> Eww [V] (f)
 - Linux -> RedoxOS [X]
 - Neofetch -> Macchina [X]
+- NeoVim -> Helix [V]
 
 [x] = WIP
 
