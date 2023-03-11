@@ -81,6 +81,27 @@ sudo dnf system-upgrade download --releasever=rawhide
 ```
 rawhide or any other release server e.g. 38
 
+# Oxidizing
+*I'm currently exploring the Rust workd and would like to replace my most used software with Rust based software*
+*I sincerly believe in Rust and most of the projects related*
+- Foot -> Alacritty [V] (p)
+- Powerlevel10k -> Starship [V] (p)
+- Bash -> Ion Shell [X] (p,l)/ Nushell [X] (f)
+- Gnu Utils -> Uutils [X] (p)
+- Ranger -> Hunter [X] (p)
+- Waybar -> Eww [V] (f)
+- Linux -> RedoxOS [X]
+
+[x] = WIP
+
+[V] = Ready to use
+
+() -> p = better performance, l = lighter, f = more functionalities
+
+Most of those programms give better fonctionalities or performance than the previous
+
+Most of them are also WIP
+
 # Road map
 ## Important
 - Touchpad configuration with sway 1.8
@@ -93,7 +114,7 @@ bindgesture swipe:left workspace next
   - Systemd-boot instead of Grub
   - systemd-networkd instead of network manager
   
-- Oxydize the alternating layout
+- Oxidize the alternating layout
 - Create a master-stack layout
 - Wayland based policy kit to be free from xwayland 
 - Remove old useless config
@@ -101,23 +122,18 @@ bindgesture swipe:left workspace next
   - even though I like the DE, Nautilus crash when handling large ammount of data and Gnome Software is just no working some times
   - I'll switch to Xfce tools or Cosmic tools once it will be released
 ## Not very important
-- Nushell or zsh instead of bash ?
-  - I first need to get good at shell scripting to have any reason to switch away from bash
 - Fuzzel based Widget for (Bluetooth, WiFi, Output/Input, light/dark mode, ...)
   - Checkout my QuickMenu repo
 - BTRFS Snapshots whith Snapper and Timeshift
   - Not very usefull on fedora since my system has never broke
-- hunter instead of ranger
-  - Still needs some work IMO
+- Alpine or Arch based config for a fast to deploy, minimal yet useable Desktop
 
-**Keep in mind that it's better to reduce the number of dependencies**
-- *To prevent the usage of unmaintained code*
-- *To keep a minimal installation*
-- *Every lighter options with similar capabilities will be prefered*
 # Personal thoughts
-- I tried the nnn file manager and can't geet used to it.
-- I'll keep an eye on Helix which is a nice contender to Neovim
-- Eww widgets are looking good and powerfull but the configuration files looks disgusting
-- Every software sucks
-- The personal script for Sway isn't the best thing (why I might switch to Qtile or hyprland or skyWM)
-- Tiling window manager are not perfect at all but happen to work better in most situations
+- Every software sucks because most of it depends on a lot of dependencies themselves depending on other, etc
+- Using and getting used to a software shouldn't be a loss of time
+- Efficient software are hard to find
+- You should always use well maintained software since most of the time you don't really know what the software is doing itself
+- Minimalisme helps building less buggy, faster, easier to understand, less memory hungry and easier to maintain software
+- Rust helps building memory safe software
+
+*Therefore, decent software are minimalist and build in rust, the rest isn't good IMO*  
