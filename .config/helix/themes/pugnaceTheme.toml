@@ -59,7 +59,7 @@ label = "dark_magenta"
 
 "ui.virtual.indent-guide" = { fg = "blue" }
 
-"ui.selection" = { bg = "magenta" }
+"ui.selection" = { bg = "black" }
 "ui.selection.primary" = { bg = "dark_magenta" }
 # TODO: namespace ui.cursor as ui.selection.cursor?
 "ui.cursor.select" = { bg = "dark_blue" }
