@@ -78,6 +78,8 @@ label = "dark_magenta"
 "diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
 "diagnostic.error" = { underline = { color = "dark_red", style = "curl" } }
 
+"ui.virtual.ruler" = { bg = "bright_black" }
+
 warning = "yellow"
 error = "dark_red"
 info = "dark_blue"
@@ -95,7 +97,8 @@ magenta = "#b48ead"
 white =   "#d8dee9"
 orange = "#d08770"
 # 
-bright_black =   "#4c566a"
+#bright_black =   "#4c566a"
+bright_black =   "#344043"
 #bright_red =     "#fb7d89"
 #bright_green =   "#a3be8c"
 #bright_yellow =  "#ffdc96"
@@ -108,7 +111,7 @@ dark_black =   "#111111"
 dark_red =     "#a3525a"
 dark_green =   "#81966f"
 #dark_yellow =  "#cfb278"
-#dark_blue =    "#6c99a6"
+dark_blue =    "#6c99a6"
 dark_magenta = "#90708a"
 dark_cyan =    "#77a0a0"
 dark_white =   "#fbf1c7"
