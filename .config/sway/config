@@ -97,6 +97,9 @@ output Virtual-1 resolution 1920x1080 position 1920,0
 #
 ### Input configuration
 #
+input * {
+	xkb_layout be
+}
 input type:touchpad {
 	# Enable tap to click
     tap enabled
@@ -138,6 +141,8 @@ input type:keyboard xkb_numlock enabled
     # Screenshot
     bindsym Print exec grim
     bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy
+	#needed on my current laptop to make the print screen key work
+	bindsym $mod+Shift+S exec grim -g "$(slurp)" - | wl-copy
     
     # Brightness
     bindsym F5 exec light -U 5
@@ -150,13 +155,13 @@ input type:keyboard xkb_numlock enabled
 	bindsym XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 	bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
     bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
-    bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+    bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ --limit 1.0
 	# With Function keys on external keyboard
 	
 	bindsym F4 exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle                               
 	bindsym F1 exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle                                   
 	bindsym F2 exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-                            
-	bindsym F3 exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+  
+	bindsym F3 exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ --limit 1.0
     # Calculator
 	bindsym F12 exec gnome-calculator
 	bindsym XF86Calculator exec gnome-calculator
@@ -272,9 +277,13 @@ exec_always gammastep
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
+    
+    # Toggle 
+    bindsym $mod+space sticky toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    #bindsym $mod+space focus mode_toggle
+    bindsym alt+Tab focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+Shift+a focus parent
