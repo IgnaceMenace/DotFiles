@@ -88,7 +88,7 @@ rawhide or any other release server e.g. 38
 - Powerlevel10k -> Starship [V] (p)
 - Bash -> Ion Shell [X] (p,l)/ Nushell [X] (f)
 - Gnu Utils -> Uutils [X] (p)
-- Ranger -> Hunter [X] (p)
+- Ranger -> Joshuto [X] (p)
 - Waybar -> Eww [V] (f)
 - Linux -> RedoxOS [X]
 - Neofetch -> Macchina [X]
