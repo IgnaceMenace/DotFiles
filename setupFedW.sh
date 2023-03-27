@@ -111,6 +111,13 @@ libreoffice-writer \
 libreoffice-calc \
 libreoffice-impress \
 wofi \
+gnome-boxes
+-y
+
+
+## Install better alternative to removed software
+sudo dnf install \
+virt-manager \
 -y
 
 # END DNF
