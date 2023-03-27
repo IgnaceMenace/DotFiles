@@ -24,6 +24,7 @@ cmatrix \
 bmon \
 npm \
 asciidoctor \
+helvum \
 -y
 
 ## Python development
@@ -194,7 +195,7 @@ sudo dnf install codium -y
 #wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
 # Install JetBrains patched fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/JetBrainsMono.zip
 unzip JetBrainsMono.zip -d JetBrainsMono/
 sudo mv JetBrainsMono /usr/share/fonts/JetBrainsMono
 
