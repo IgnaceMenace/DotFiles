@@ -48,6 +48,7 @@ light \
 NetworkManager-tui \
 wl-clipboard \
 pavucontrol \
+imv \
 -y
 
 # Install policy kit for any DE
