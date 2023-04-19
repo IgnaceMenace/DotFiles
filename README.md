@@ -106,30 +106,16 @@ Most of those programms give better fonctionalities or performance than the prev
 Most of them are also WIP
 
 # Road map
-## Important
-- Touchpad configuration with sway 1.8
-```
-bindgesture swipe:right workspace prev
-bindgesture swipe:left workspace next
-```
-- Switch to full systemD management
-  - I have no real reasons to do so but consistency 
-  - Systemd-boot instead of Grub
-  - systemd-networkd instead of network manager
-  
+## Important  
 - Oxidize the alternating layout
-- Create a master-stack layout
 - Wayland based policy kit to be free from xwayland 
 - Remove old useless config
-- Move away from Gnome software
-  - even though I like the DE, Nautilus crash when handling large ammount of data and Gnome Software is just no working some times
-  - I'll switch to Xfce tools or Cosmic tools once it will be released
 ## Not very important
 - Fuzzel based Widget for (Bluetooth, WiFi, Output/Input, light/dark mode, ...)
   - Checkout my QuickMenu repo
-- BTRFS Snapshots whith Snapper and Timeshift
-  - Not very usefull on fedora since my system has never broke
 - Alpine or Arch based config for a fast to deploy, minimal yet useable Desktop
+- Hyprland config
+- Silverblue image based on OCI maybe
 
 # Personal thoughts
 - Every software sucks because most of it depends on a lot of dependencies themselves depending on other, etc
@@ -139,4 +125,4 @@ bindgesture swipe:left workspace next
 - Minimalisme helps building less buggy, faster, easier to understand, less memory hungry and easier to maintain software
 - Rust helps building memory safe software
 
-*Therefore, decent software are minimalist and build in rust, the rest isn't good IMO*  
+*Therefore, best software are minimalist and build in rust*
