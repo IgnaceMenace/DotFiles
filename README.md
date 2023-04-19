@@ -38,7 +38,8 @@ In `Tools/Options/General`
 - `Path` write `/bin/flatpak-spawn`
 - `Arguments` write `--host /usr/bin/foot vim`
 # Sway Window Manager
-![20220529_23h33m54s_grim](https://user-images.githubusercontent.com/74070019/170892201-65f62493-ed11-4c46-a08b-77e637be05cb.png)
+![Demo](https://user-images.githubusercontent.com/74070019/233034065-1ad2bc2c-5872-418a-b565-d71e7d5cb743.png)
+
 # Foot
 To make it work properly when using it for remote access, 
 you should install foot-terminfo on the host machine/container
