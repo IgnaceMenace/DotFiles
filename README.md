@@ -23,7 +23,6 @@ If tmuxinator doesn't work, you should replace it with TmuxP but the configurati
 # Midnight Commander
 It's pretty powerfull but knowing all of its feature is a loss of time so I haven't realy configured it.
 Learn more [here](https://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
-# ZSH
 Make it default with `sudo chsh -s /bin/zsh $USER`
 Install powerlevel10K theme with 
 ```
@@ -65,7 +64,7 @@ The color chart html file contain all the colors I usually use
 I need a fallback option for Xorg since some features are eather not available on Wayland or not working fine on Wlroots.
 Previously I was using Gnome as a fallback but to maintain a lightweight system I decided to use I3 as a fallback.
 The config for I3 is very minimal and WIP since I don't want to spend too much time on a fallback mode.
-## Dependecies
+## Dependencies
 - i3
 - xrandr
 - xset
