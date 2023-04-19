@@ -100,6 +100,7 @@ Most of them are also WIP
 - Oxidize the alternating layout
 - Wayland based policy kit to be free from xwayland 
 - Remove old useless config
+- update the colorchart
 ## Not very important
 - Fuzzel based Widget for (Bluetooth, WiFi, Output/Input, light/dark mode, ...)
   - Checkout my QuickMenu repo
