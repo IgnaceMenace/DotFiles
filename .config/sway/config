@@ -32,6 +32,7 @@ set $right l
 # Foot might be a better option
 exec foot --server
 set $term footclient
+bindsym $mod+alt+p exec python ~/.config/sway/fuzzelPowerProfileMenu.py
 #
 ### Alternating layout
 #
@@ -48,12 +49,12 @@ mode "Alternating Layout" {
 }
 bindsym $mod+alt+a mode "Alternating Layout"
 # This mode is deprecated since you should use the fuzzel menu now
-bindsym $mod+a exec python ~/.config/sway/layoutMenu.py
+bindsym $mod+a exec python ~/.config/sway/fuzzelLayoutMenu.py
 #
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu fuzzel -f 'JetBrainsMono NF' -C ebcb8bff -b 1d1f21ff -T footclient -B 3 -m a3be8cff -t 88c0d0ff -S d8dee9ff -s bf616aff --show-actions
+set $menu fuzzel -f 'JetBrainsMono NF'-13 -C ebcb8bff -b 1d1f21ff -T footclient -B 3 -m a3be8cff -t 88c0d0ff -S d8dee9ff -s bf616aff --show-actions
 #
 # Ricing
 #
@@ -343,6 +344,12 @@ mode "gapSet" {
 	bindsym Escape mode "default"
 }
 bindsym $mod+Shift+g mode "gapSet"
+
+#
+# Gestures
+#
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
 #
 # Status Bar:
 #
