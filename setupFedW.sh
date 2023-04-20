@@ -23,7 +23,6 @@ asciiquarium \
 cmatrix \
 bmon \
 npm \
-asciidoctor \
 helvum \
 -y
 
@@ -95,6 +94,7 @@ sudo ln -s $(rustup which rust-analyzer ) /usr/local/bin/rust-analyzer
 # zsh \
 # mc \
 # wine \
+# asciidoctor \
 # -y
 
 ## GNOME tools
