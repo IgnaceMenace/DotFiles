@@ -24,6 +24,7 @@ cmatrix \
 bmon \
 npm \
 helvum \
+blueman \
 -y
 
 ## Python development
