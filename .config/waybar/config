@@ -99,7 +99,8 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["◯", "", "", "", "", "", "", "", ""]
+	"states": [0,50],
+        "format-icons": ["", ""]
     },
     "battery": {
         "states": {
