@@ -210,6 +210,7 @@ wget https://eid.belgium.be/sites/default/files/software/eid-archive-fedora-2021
 sudo dnf install eid-archive-fedora-2021-1.noarch.rpm -y
 sudo dnf install eid-viewer -y
 sudo dnf install eid-mw -y
+cd
 
 # Install JetBrains patched fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/JetBrainsMono.zip
