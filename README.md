@@ -94,7 +94,10 @@ rawhide or any other release server e.g. 38
 Most of those programms give better fonctionalities or performance than the previous
 
 Most of them are also WIP
-
+# Think about
+- Replace grub with systemd-boot (cleaner)
+  - Can be done after the install or from the fedora everything installer
+- Set systemd-cryptenroll to use your tpm2 chip
 # Road map
 ## Important  
 - Oxidize the alternating layout
