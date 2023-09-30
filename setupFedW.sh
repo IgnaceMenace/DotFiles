@@ -25,6 +25,7 @@ bmon \
 npm \
 helvum \
 blueman \
+network-manager-applet \
 -y
 
 ## Python development
