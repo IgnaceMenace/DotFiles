@@ -106,6 +106,9 @@ sudo ln -s $(rustup which rust-analyzer ) /usr/local/bin/rust-analyzer
 # gnome-tweaks \
 # gnome-calculator \
 # nautilus \
+# gnome-calendar \
+# gnome-contacts \
+# gnome-music \
 # -y
 
 ## Remove software we won't use or need to reinstall differently
