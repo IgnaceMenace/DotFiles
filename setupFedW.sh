@@ -25,7 +25,6 @@ bmon \
 npm \
 helvum \
 blueman \
-network-manager-applet \
 -y
 
 ## Python development
@@ -47,6 +46,7 @@ gammastep \
 firefox \
 light \
 NetworkManager-tui \
+network-manager-applet \
 wl-clipboard \
 pavucontrol \
 imv \
