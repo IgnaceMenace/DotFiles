@@ -22,7 +22,6 @@ htop \
 asciiquarium \
 cmatrix \
 bmon \
-npm \
 helvum \
 blueman \
 -y
@@ -49,28 +48,10 @@ NetworkManager-tui \
 network-manager-applet \
 wl-clipboard \
 pavucontrol \
-imv \
 -y
 
 # Install policy kit for any DE
 sudo dnf install lxpolkit -y
-# or
-# sudo dnf install polkit-kde -y
-
-## Xorg fallback
-# sudo dnf install \
-# i3 \
-# xset \
-# xrandr \
-# xinit \
-# dmenu \
-# -y
-
-## A rust alternative is available
-sudo dnf install \
-neovim \
-tmux \
--y
 
 ## Rust Alternatives work in progress
 curl -sS https://starship.rs/install.sh | sh
@@ -91,14 +72,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rust-analyzer
 sudo ln -s $(rustup which rust-analyzer ) /usr/local/bin/rust-analyzer
 
-## Not using anymore
-# sudo dnf install \
-# zsh \
-# mc \
-# wine \
-# asciidoctor \
-# -y
-
 ## GNOME tools
 # sudo dnf install \
 # gnome-shell-extension-pop-shell \
@@ -117,24 +90,18 @@ libreoffice-writer \
 libreoffice-calc \
 libreoffice-impress \
 wofi \
-gnome-boxes
+gnome-boxes \
+gnome-terminal \
 -y
 
 
 ## Install better alternative to removed software
 sudo dnf install \
 virt-manager \
+gnome-console \
 -y
 
 # END DNF
-
-# PIP
-
-## Useful tools with pip
-pip install tmuxp
-pip install neovim
-
-# END PIP
 
 # Flatpaks
 # *Used when not part of the base system and requires a lot of dependencies but doesn't need performance*
@@ -153,24 +120,12 @@ flatpak install flathub org.libreoffice.LibreOffice -y
 flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub org.qbittorrent.qBittorrent -y
 flatpak install flathub com.usebottles.bottles -y
-flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
+#flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
 
 # End Flatpaks
 
 # Enable network manager
 sudo systemctl enable NetworkManager
-
-# ZSH
-# *Deprecated I'm back with bash since I don't need ZSH
-
-# Install powerlevel10k (I'm using Starship now)
-# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-# echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-
-# Make Zsh default shell
-# sudo chsh -s /bin/zsh $USER
-
-# END ZSH
 
 # OS Tweak
 # *Improve performance or add newer software or better experience
@@ -203,9 +158,6 @@ sudo fwupdmgr update
 sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
 printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo
 sudo dnf install codium -y
-
-# Install Joplin the recommended way
-#wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
 # Install belgian eid software
 cd
