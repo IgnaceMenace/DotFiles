@@ -92,7 +92,7 @@ bindsym $mod+z exec python ~/.config/sway/fuzzelPowerMenu.py
 #
 ### Output configuration
 #
-output * bg /home/pugnace/Pictures/Wallpapers/Background3.png fill
+output * bg /home/pugnace/Pictures/Wallpapers/Background4.png fill
 #output * bg /home/pugnace/Pictures/Wallpapers/futurecity_dark1.png fill
 output Virtual-1 resolution 1920x1080 position 1920,0
 #
