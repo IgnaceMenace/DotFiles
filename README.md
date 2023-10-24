@@ -23,10 +23,6 @@ If tmuxinator doesn't work, you should replace it with TmuxP but the configurati
 # Midnight Commander
 It's pretty powerfull but knowing all of its feature is a loss of time so I haven't realy configured it.
 Learn more [here](https://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/)
-# Joplin
-In `Tools/Options/General`
-- `Path` write `/bin/flatpak-spawn`
-- `Arguments` write `--host /usr/bin/foot vim`
 # Sway Window Manager
 ![Demo](https://user-images.githubusercontent.com/74070019/233034065-1ad2bc2c-5872-418a-b565-d71e7d5cb743.png)
 
