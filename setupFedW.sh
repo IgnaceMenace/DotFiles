@@ -217,7 +217,7 @@ sudo dnf install eid-mw -y
 cd
 
 # Install JetBrains patched fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/JetBrainsMono.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
 unzip JetBrainsMono.zip -d JetBrainsMono/
 sudo mv JetBrainsMono /usr/share/fonts/JetBrainsMono
 
