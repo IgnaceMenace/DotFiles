@@ -12,11 +12,6 @@ nmap \
 ranger \
 rsync \
 python \
--y
-
-## Install usefull light packages
-sudo dnf install \
-vim \
 toolbox \
 htop \
 asciiquarium \
@@ -24,12 +19,7 @@ cmatrix \
 bmon \
 helvum \
 blueman \
--y
-
-## Python development
-sudo dnf install \
-pip \
-conda \
+dnf5 \
 -y
 
 ## Install sway and associated packages
@@ -48,10 +38,8 @@ NetworkManager-tui \
 network-manager-applet \
 wl-clipboard \
 pavucontrol \
+install lxpolkit \
 -y
-
-# Install policy kit for any DE
-sudo dnf install lxpolkit -y
 
 ## Rust Alternatives work in progress
 curl -sS https://starship.rs/install.sh | sh
@@ -62,9 +50,6 @@ sudo dnf install zellij -y
 sudo dnf copr enable varlad/helix -y
 sudo dnf install helix -y
 
-sudo dnf install python-lsp-server -y
-# or pip install python-lsp-server
-
 # sudo dnf install alacritty -y
 
 ## Rust development
@@ -72,17 +57,13 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rust-analyzer
 sudo ln -s $(rustup which rust-analyzer ) /usr/local/bin/rust-analyzer
 
-## GNOME tools
-# sudo dnf install \
-# gnome-shell-extension-pop-shell \
-# xprop \
-# gnome-tweaks \
-# gnome-calculator \
-# nautilus \
-# gnome-calendar \
-# gnome-contacts \
-# gnome-music \
-# -y
+## Python development
+sudo dnf install \
+pip \
+conda \
+python-lsp-server \
+-y
+# or pip install python-lsp-server
 
 ## Remove software we won't use or need to reinstall differently
 sudo dnf remove \
@@ -92,6 +73,7 @@ libreoffice-impress \
 wofi \
 gnome-boxes \
 gnome-terminal \
+rhythmbox \
 -y
 
 
@@ -99,12 +81,8 @@ gnome-terminal \
 sudo dnf install \
 virt-manager \
 gnome-console \
+gnome-music \
 -y
-
-# END DNF
-
-# Flatpaks
-# *Used when not part of the base system and requires a lot of dependencies but doesn't need performance*
 
 # Install Flatpak
 sudo dnf install flatpak -y
@@ -113,7 +91,7 @@ sudo dnf install flatpak -y
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Give flatpaks access to GTK theme
-sudo flatpak override --filesystem=xdg-config/gtk-4.0
+#sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
 # Install some flatpak
 flatpak install flathub org.libreoffice.LibreOffice -y
@@ -121,7 +99,6 @@ flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub org.qbittorrent.qBittorrent -y
 flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub org.videolan.VLC -y
-#flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
 
 # End Flatpaks
 
@@ -144,6 +121,7 @@ sudo dnf install lame\* --exclude=lame-devel -y
 sudo dnf group upgrade --with-optional Multimedia -y
 
 # DNF tweak
+# ABSOLUTELY NEEDS TO BE FIXED
 sudo sed -i '9i\fastestmirror=true' /etc/dnf/dnf.conf
 sudo sed -i '10i\max_parrallel_downloads=10' /etc/dnf/dnf.conf
 sudo dnf clean all
@@ -161,6 +139,7 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbase
 sudo dnf install codium -y
 
 # Install belgian eid software
+#Needs to be fixed too
 cd
 cd Downloads/
 wget https://eid.belgium.be/sites/default/files/software/eid-archive-fedora-2021-1.noarch.rpm
