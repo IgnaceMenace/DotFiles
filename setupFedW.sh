@@ -139,14 +139,14 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbase
 sudo dnf install codium -y
 
 # Install belgian eid software
-#Needs to be fixed too
-cd
-cd Downloads/
-wget https://eid.belgium.be/sites/default/files/software/eid-archive-fedora-2021-1.noarch.rpm
-sudo dnf install eid-archive-fedora-2021-1.noarch.rpm -y
-sudo dnf install eid-viewer -y
-sudo dnf install eid-mw -y
-cd
+#Not always available when new version is out so better compile it
+#cd
+#cd Downloads/
+#wget https://eid.belgium.be/sites/default/files/software/eid-archive-fedora-2021-1.noarch.rpm
+#sudo dnf install eid-archive-fedora-2021-1.noarch.rpm -y
+#sudo dnf install eid-viewer -y
+#sudo dnf install eid-mw -y
+#cd
 
 # Install JetBrains patched fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
