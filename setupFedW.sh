@@ -72,7 +72,6 @@ libreoffice-calc \
 libreoffice-impress \
 wofi \
 gnome-boxes \
-gnome-terminal \
 rhythmbox \
 -y
 
@@ -80,7 +79,6 @@ rhythmbox \
 ## Install better alternative to removed software
 sudo dnf install \
 virt-manager \
-gnome-console \
 gnome-music \
 -y
 
