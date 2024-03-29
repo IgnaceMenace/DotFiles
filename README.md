@@ -1,6 +1,7 @@
 # Dotfiles
 Just a repository with all my linux dotfiles to help me reconfigure each time I reinstall a linux distro.
-Take whatever you want, it's free.
+Take whatever you want, it's free. 
+**Latest version is in the branch "Light".**
 # Installation
 ## Fedora Workstation
 - Clone the repository
