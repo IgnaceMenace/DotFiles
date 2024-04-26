@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # DNF
 ## *Used for lightwheight packages and member of base system*
 
