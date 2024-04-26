@@ -119,11 +119,10 @@ sudo dnf install lame\* --exclude=lame-devel -y
 sudo dnf group upgrade --with-optional Multimedia -y
 
 # DNF tweak
-sudo cat >> /etc/dnf/dnf.conf << EOF                                                                         
-fastestmirror=true                                                                                           
-max_parrallel_downloads=10                                                                                   
-                                                                                                             
-EOF
+sudo su
+echo 'fastestmirror=true' >> /etc/dnf/dnf.conf
+echo 'max_parrallel_downloads=10 ' >> /etc/dnf/dnf.conf
+exit
 
 sudo dnf clean all
 
