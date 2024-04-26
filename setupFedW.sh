@@ -18,7 +18,6 @@ asciiquarium \
 cmatrix \
 bmon \
 helvum \
-blueman \
 dnf5 \
 -y
 
@@ -30,6 +29,7 @@ grim \
 slurp \
 waybar \
 fuzzel \
+blueman \
 mako \
 gammastep \
 firefox \
@@ -47,7 +47,7 @@ curl -sS https://starship.rs/install.sh | sh
 sudo dnf copr enable varlad/zellij -y
 sudo dnf install zellij -y
 
-sudo dnf copr enable varlad/helix -y
+#sudo dnf copr enable varlad/helix -y
 sudo dnf install helix -y
 
 # sudo dnf install alacritty -y
@@ -95,7 +95,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 flatpak install flathub org.libreoffice.LibreOffice -y
 flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub org.qbittorrent.qBittorrent -y
-flatpak install flathub com.usebottles.bottles -y
+#flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub org.videolan.VLC -y
 
 # End Flatpaks
