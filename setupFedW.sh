@@ -23,36 +23,11 @@ helvum \
 dnf5 \
 -y
 
-## Install sway and associated packages
-sudo dnf install \
-sway \
-foot \
-grim \
-slurp \
-waybar \
-fuzzel \
-blueman \
-mako \
-gammastep \
-firefox \
-light \
-NetworkManager-tui \
-network-manager-applet \
-wl-clipboard \
-pavucontrol \
-install lxpolkit \
--y
-
-## Rust Alternatives work in progress
-curl -sS https://starship.rs/install.sh | sh
-
 sudo dnf copr enable varlad/zellij -y
 sudo dnf install zellij -y
 
 #sudo dnf copr enable varlad/helix -y
 sudo dnf install helix -y
-
-# sudo dnf install alacritty -y
 
 ## Rust development
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -169,17 +144,6 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 # End Docker
 
-# Install JetBrains patched fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
-unzip JetBrainsMono.zip -d JetBrainsMono/
-sudo mv JetBrainsMono /usr/share/fonts/JetBrainsMono
-
-# Move the configuration files
-rsync -a Pictures/Wallpapers ~/Pictures
-rm -rf Pictures/Wallpapers
-rm -rf .git
-rm JetBrainsMono.zip
-rm colorChart.html
 rm README.md
 rm setupFedW.sh
 cd ..
