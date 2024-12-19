@@ -9,7 +9,7 @@ util-linux-user \
 NetworkManager \
 git \
 btop \
-neofetch \
+fastfetch \
 nmap \
 ranger \
 rsync \
@@ -20,7 +20,6 @@ asciiquarium \
 cmatrix \
 bmon \
 helvum \
-dnf5 \
 -y
 
 sudo dnf copr enable varlad/zellij -y
@@ -65,20 +64,15 @@ sudo dnf install flatpak -y
 # Enable flathub repo
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# Give flatpaks access to GTK theme
-#sudo flatpak override --filesystem=xdg-config/gtk-4.0
-
 # Install some flatpak
 flatpak install flathub org.libreoffice.LibreOffice -y
 flatpak install flathub org.gimp.GIMP -y
 flatpak install flathub org.qbittorrent.qBittorrent -y
-#flatpak install flathub com.usebottles.bottles -y
 flatpak install flathub org.videolan.VLC -y
-
+flatpak install flathub org.chromium.Chromium
+#for work
+#flatpak install flathub com.microsoft.Edge
 # End Flatpaks
-
-# Enable network manager
-sudo systemctl enable NetworkManager
 
 # OS Tweak
 # *Improve performance or add newer software or better experience
