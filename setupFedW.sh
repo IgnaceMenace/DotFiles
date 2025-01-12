@@ -113,6 +113,7 @@ sudo dnf install codium -y
 codium --install-extension ms-python.python
 codium --install-extension ms-toolsai.jupyter
 codium --install-extension ms-azuretools.vscode-docker
+codium --install-extension Continue.continue
 # Install belgian eid software
 #Not always available when new version is out so better compile it
 #cd
